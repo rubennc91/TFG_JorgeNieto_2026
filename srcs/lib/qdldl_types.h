@@ -1,23 +1,23 @@
 #ifndef QDLDL_TYPES_H
-# define QDLDL_TYPES_H
+#define QDLDL_TYPES_H
 
-# ifdef __cplusplus
+#ifdef __cplusplus
 extern "C" {
-# endif /* ifdef __cplusplus */
+#endif
 
-#include <limits.h> //for the QDLDL_INT_TYPE_MAX
+#include "types.h" // Importante: incluimos types.h para acceder a c_float/c_int
 
-// QDLDL integer and float types
+// --- CAMBIO: Vinculamos los tipos de QDLDL a los de OSQP ---
 
-typedef long long    QDLDL_int;   /* for indices */
-typedef double  QDLDL_float; /* for numerical values  */
-typedef unsigned char   QDLDL_bool;  /* for boolean values  */
+// En lugar de usar double/long por defecto, usamos lo que diga OSQP
+typedef c_float QDLDL_float;  // Ahora será float
+typedef c_int   QDLDL_int;    // Ahora será int (o long long si DLONG está activo)
+typedef c_int   QDLDL_bool;   // Boolean compatible
 
-//Maximum value of the signed type QDLDL_int.
-#define QDLDL_INT_MAX 
+// -----------------------------------------------------------
 
-# ifdef __cplusplus
+#ifdef __cplusplus
 }
-# endif /* ifdef __cplusplus */
+#endif
 
-#endif /* ifndef QDLDL_TYPES_H */
+#endif /* QDLDL_TYPES_H */

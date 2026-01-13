@@ -5,7 +5,6 @@
     <originFiles name="error.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\error.c"/>
     <originFiles name="kkt.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\kkt.c"/>
     <originFiles name="lin_alg.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\lin_alg.c"/>
-    <originFiles name="main.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\main.c"/>
     <originFiles name="mpc_util.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\mpc_util.c"/>
     <originFiles name="osqp.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\osqp.c"/>
     <originFiles name="proj.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\proj.c"/>
@@ -13,7 +12,6 @@
     <originFiles name="qdldl_interface.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\qdldl_interface.c"/>
     <originFiles name="scaling.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\scaling.c"/>
     <originFiles name="simulink_block.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\simulink_block.c"/>
-    <originFiles name="util.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\util.c"/>
     <originFiles name="workspace.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\workspace.c"/>
     <originFiles name="abc_dq0_pos.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\abc_dq0_pos.h"/>
     <originFiles name="auxil.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\auxil.h"/>
@@ -34,8 +32,9 @@
     <originFiles name="simulink_block.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\simulink_block.h"/>
     <originFiles name="spll_3ph_srf.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\spll_3ph_srf.h"/>
     <originFiles name="types.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\types.h"/>
-    <originFiles name="util.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\util.h"/>
     <originFiles name="workspace.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\workspace.h"/>
   </source>
-  <testbench/>
+  <testbench>
+    <originFiles name="main.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\main.c"/>
+  </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

@@ -5,6 +5,34 @@
 extern "C" {
 # endif /* ifdef __cplusplus */
 
+
+// 1. Incluir configuración original
+#include "osqp_configure.h"
+
+// 2. CORRECCIÓN: Si ya estaba definido, lo quitamos y forzamos el nuestro
+#ifdef EMBEDDED
+#undef EMBEDDED
+#endif
+#define EMBEDDED 2
+
+// 3. Forzamos float y desactivamos impresión
+#ifdef DFLOAT
+#undef DFLOAT
+#endif
+#define DFLOAT 1
+
+// 3. MATAR PRINTING Y PROFILING (IMPORTANTE: NO definir a 0)
+
+#ifdef PRINTING
+#undef PRINTING
+#endif
+// ¡BORRADA LA LÍNEA #define PRINTING 0! Ahora "PRINTING" no existe.
+
+#ifdef PROFILING
+#undef PROFILING
+#endif
+// ¡BORRADA LA LÍNEA #define PROFILING 0! Ahora "PROFILING" no existe.
+
 /*
    Define OSQP compiler flags
  */

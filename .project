@@ -102,11 +102,6 @@
 			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/lib/lin_alg.h</location>
 		</link>
 		<link>
-			<name>source/main.c</name>
-			<type>1</type>
-			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/src/main.c</location>
-		</link>
-		<link>
 			<name>source/mpc_util.c</name>
 			<type>1</type>
 			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/src/mpc_util.c</location>
@@ -197,16 +192,6 @@
 			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/lib/types.h</location>
 		</link>
 		<link>
-			<name>source/util.c</name>
-			<type>1</type>
-			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/src/util.c</location>
-		</link>
-		<link>
-			<name>source/util.h</name>
-			<type>1</type>
-			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/lib/util.h</location>
-		</link>
-		<link>
 			<name>source/workspace.c</name>
 			<type>1</type>
 			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/src/workspace.c</location>
@@ -215,6 +200,11 @@
 			<name>source/workspace.h</name>
 			<type>1</type>
 			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/lib/workspace.h</location>
+		</link>
+		<link>
+			<name>testbench/main.c</name>
+			<type>1</type>
+			<location>C:/workspace/TFG_JorgeNieto/HLS/Eval_OSQP/srcs/src/main.c</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
