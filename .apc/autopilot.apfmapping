@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source/>
+  <source>
+    <originFiles name="auxil.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\auxil.c"/>
+    <originFiles name="error.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\error.c"/>
+    <originFiles name="kkt.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\kkt.c"/>
+    <originFiles name="lin_alg.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\lin_alg.c"/>
+    <originFiles name="main.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\main.c"/>
+    <originFiles name="mpc_util.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\mpc_util.c"/>
+    <originFiles name="osqp.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\osqp.c"/>
+    <originFiles name="proj.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\proj.c"/>
+    <originFiles name="qdldl.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\qdldl.c"/>
+    <originFiles name="qdldl_interface.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\qdldl_interface.c"/>
+    <originFiles name="scaling.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\scaling.c"/>
+    <originFiles name="simulink_block.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\simulink_block.c"/>
+    <originFiles name="util.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\util.c"/>
+    <originFiles name="workspace.c" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\src\workspace.c"/>
+    <originFiles name="abc_dq0_pos.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\abc_dq0_pos.h"/>
+    <originFiles name="auxil.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\auxil.h"/>
+    <originFiles name="constants.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\constants.h"/>
+    <originFiles name="dq0_abc.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\dq0_abc.h"/>
+    <originFiles name="error.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\error.h"/>
+    <originFiles name="glob_opts.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\glob_opts.h"/>
+    <originFiles name="kkt.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\kkt.h"/>
+    <originFiles name="lin_alg.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\lin_alg.h"/>
+    <originFiles name="mpc_util.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\mpc_util.h"/>
+    <originFiles name="osqp.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\osqp.h"/>
+    <originFiles name="osqp_configure.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\osqp_configure.h"/>
+    <originFiles name="proj.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\proj.h"/>
+    <originFiles name="qdldl.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\qdldl.h"/>
+    <originFiles name="qdldl_interface.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\qdldl_interface.h"/>
+    <originFiles name="qdldl_types.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\qdldl_types.h"/>
+    <originFiles name="scaling.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\scaling.h"/>
+    <originFiles name="simulink_block.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\simulink_block.h"/>
+    <originFiles name="spll_3ph_srf.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\spll_3ph_srf.h"/>
+    <originFiles name="types.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\types.h"/>
+    <originFiles name="util.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\util.h"/>
+    <originFiles name="workspace.h" path="C:\workspace\TFG_JorgeNieto\HLS\Eval_OSQP\srcs\lib\workspace.h"/>
+  </source>
   <testbench/>
 </autopilotfilemapping:AutoPilotFileMapping>

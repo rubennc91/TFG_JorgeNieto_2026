@@ -1,0 +1,18 @@
+# Archivos de log y temporales de Vitis/Vivado
+*.log
+*.jou
+*.str
+*.tmp
+.Xil/
+
+# Carpetas de resultados de síntesis (Soluciones)
+# Normalmente solo quieres el código fuente, no los resultados
+solution*/
+!solution*/directives.tcl
+!solution*/script.tcl
+
+# Metadatos de Eclipse (Opcional: Si quieres compartir la config del proyecto, NO los incluyas aquí.
+# Si prefieres solo guardar el código fuente C++, descomenta lo siguiente)
+#.project
+#.cproject
+#.settings/
