@@ -2,7 +2,7 @@
 
 This repository contains a **High-Level Synthesis (HLS)** implementation of the [OSQP (Operator Splitting Quadratic Program)](https://osqp.org/) solver, optimized for Xilinx Vitis HLS.
 
-This project is part of a Bachelor's Thesis (Trabajo de Fin de Grado - TFG) developed by **[Jorge Nieto]** and supervised by Rubén Nieto.
+This project is part of a Bachelor's Thesis (Trabajo de Fin de Grado - TFG) developed by **Jorge Nieto** and supervised by Rubén Nieto.
 
 ## 🎯 Project Overview
 
@@ -66,17 +66,18 @@ void myFunction(
 
 ## 📊 Resource Usage (Example)
 
-* **Target:** xc7z010-clg400-1
-* **Latency:** [-] cycles
-* **BRAM:** [14 %]
-* **DSP:** [53 %]
-* **FF:** [50 %]
-* **LUT:** [157 %]
+* **Target:** xc7z020-clg484-1
+* **Latency:** - cycles
+* **BRAM:** 6 %
+* **DSP:** 19 %
+* **FF:** 16 %
+* **LUT:** 52 %
 
 ## 📜 Credits & License
 
 * **Original OSQP Solver:** Stellato et al.
 * **QDLDL Linear Solver:** Paul Goulart et al.
-* **HLS Porting & Adaptation:** [Jorge Nieto / Rubén Nieto]
+* **Application:** Estevão Modolo
+* **HLS Porting & Adaptation:** Jorge Nieto / Rubén Nieto
 
 This project follows the **Apache 2.0 License** (same as OSQP).
