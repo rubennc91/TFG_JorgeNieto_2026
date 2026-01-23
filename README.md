@@ -53,3 +53,30 @@ void myFunction(
     float u00[2],        // Previous control input
     float outputVector[2]// Computed control action (v_ref)
 );
+```
+
+## ✅ To-Do List / Future Work
+
+- [x] Port OSQP C code to static C compatible with Vitis HLS.
+- [x] Verify C-Synthesis and remove all pointer-to-pointer errors.
+- [ ] **Cosimulation:** Verify numerical accuracy against the original C code using a Testbench.
+- [ ] **IP Export:** Export the RTL design as an IP Core for Vivado.
+- [ ] **System Integration:** Integrate the IP Core into a Zynq Block Design (Connect via AXI4-Lite or AXI-Stream).
+- [ ] **Hardware Validation:** Run the solver on the physical FPGA (Zybo Z7-10) and benchmark execution time.
+
+## 📊 Resource Usage (Example)
+
+* **Target:** xc7z010-clg400-1
+* **Latency:** [-] cycles
+* **BRAM:** [14 %]
+* **DSP:** [53 %]
+* **FF:** [50 %]
+* **LUT:** [157 %]
+
+## 📜 Credits & License
+
+* **Original OSQP Solver:** Stellato et al.
+* **QDLDL Linear Solver:** Paul Goulart et al.
+* **HLS Porting & Adaptation:** [Jorge Nieto / Rubén Nieto]
+
+This project follows the **Apache 2.0 License** (same as OSQP).
