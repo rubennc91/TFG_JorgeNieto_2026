@@ -4,13 +4,13 @@ This repository contains a **High-Level Synthesis (HLS)** implementation of the 
 
 This project is part of a Bachelor's Thesis (Trabajo de Fin de Grado - TFG) developed by **Jorge Nieto** and supervised by Rubén Nieto.
 
-## 🎯 Project Overview
+## Project Overview
 
 The goal of this project is to embed the OSQP solver into an FPGA (specifically targeting the **Xilinx XC7Z010**, e.g., Zybo board) to solve Model Predictive Control (MPC) problems in real-time.
 
 Standard C code for solvers often relies on dynamic memory allocation (`malloc`) and complex pointer-to-pointer structures, which are not synthesizable by HLS tools. This project refactors the OSQP C code to be fully static and hardware-friendly.
 
-## 🚀 Key Features & Modifications
+## Key Features & Modifications
 
 To achieve HLS synthesis, the original OSQP source code was heavily modified using a **Flat Array Strategy**:
 
@@ -20,14 +20,14 @@ To achieve HLS synthesis, the original OSQP source code was heavily modified usi
 3.  **QDLDL Interface Adaptation:** The linear system solver interface was rewritten to access global data structures directly, removing function pointers and polymorphism.
 4.  **Floating Point:** Configured to use `float` (32-bit) instead of `double` to optimize DSP slice usage on the FPGA.
 
-## 📂 Repository Structure
+## Repository Structure
 
 * **`srcs/src/`**: Modified source code (`osqp.c`, `auxil.c`, `scaling.c`, etc.).
 * **`srcs/lib/`**: Header files defining the static structures and flattened arrays.
 * **`srcs/src/simulink_block.c`**: Contains the **Top-Level Function** (`myFunction`) that wraps the solver for the control loop.
 * **`srcs/src/workspace.c`**: Contains the hardcoded problem data (matrices and vectors) generated from MATLAB/Python.
 
-## 🛠️ How to Build (Vitis HLS)
+## How to Build (Vitis HLS)
 
 This project is designed for **Xilinx Vitis HLS 2020.2** (or compatible versions).
 
@@ -40,7 +40,7 @@ This project is designed for **Xilinx Vitis HLS 2020.2** (or compatible versions
 6.  **Select Part:** `xc7z010-clg400-1` (or your target FPGA).
 7.  Run **C Synthesis**.
 
-## 🔌 Top-Level Interface
+## Top-Level Interface
 
 The hardware block `myFunction` exposes the following interface for the MPC controller:
 
@@ -55,7 +55,7 @@ void myFunction(
 );
 ```
 
-## ✅ To-Do List / Future Work
+## To-Do List / Future Work
 
 - [x] Port OSQP C code to static C compatible with Vitis HLS.
 - [x] Verify C-Synthesis and remove all pointer-to-pointer errors.
@@ -64,7 +64,7 @@ void myFunction(
 - [ ] **System Integration:** Integrate the IP Core into a Zynq Block Design (Connect via AXI4-Lite or AXI-Stream).
 - [ ] **Hardware Validation:** Run the solver on the physical FPGA (Zybo Z7-10) and benchmark execution time.
 
-## 📊 Resource Usage (Example)
+## Resource Usage (Example)
 
 * **Target:** xc7z020-clg484-1
 * **Latency:** - cycles
@@ -73,7 +73,7 @@ void myFunction(
 * **FF:** 16 %
 * **LUT:** 52 %
 
-## 📜 Credits & License
+## Credits & License
 
 * **Original OSQP Solver:** Stellato et al.
 * **QDLDL Linear Solver:** Paul Goulart et al.
