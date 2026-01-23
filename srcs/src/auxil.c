@@ -1,7 +1,7 @@
 #include "osqp.h"
 #include "auxil.h"
 #include "proj.h"
-#include "lin_alg.h" // IMPRESCINDIBLE
+#include "lin_alg.h"
 #include "constants.h"
 #include "scaling.h"
 #include "util.h"
@@ -31,7 +31,7 @@ static void compute_rhs(void) {
 
 void update_xz_tilde(void) {
   compute_rhs();
-  solve_linsys_qdldl(&linsys_solver, work_xz_tilde);
+  solve_linsys_qdldl(work_xz_tilde);
 }
 
 void update_x(void) {
@@ -47,8 +47,7 @@ void update_z(void) {
   for (i = 0; i < data.m; i++) {
     work_z[i] = settings.alpha * work_xz_tilde[i + data.n] + ((c_float)1.0 - settings.alpha) * work_z_prev[i] + work_rho_inv_vec[i] * work_y[i];
   }
-  // Usamos el puntero global 'workspace' para llamar a project, que lo espera
-  project(&workspace, work_z);
+  project(work_z);
 }
 
 void update_y(void) {
@@ -60,18 +59,17 @@ void update_y(void) {
 }
 
 c_float compute_obj_val(c_float *x) {
-  c_float obj_val = quad_form(&Pdata, x) + vec_prod(qdata, x, data.n);
+  c_float obj_val = quad_form(Pdata_x, Pdata_p, Pdata_i, data.n, x) + vec_prod(qdata, x, data.n);
   if (settings.scaling) obj_val *= scaling.cinv;
   return obj_val;
 }
 
 c_float compute_pri_res(c_float *x, c_float *z) {
-  mat_vec(&Adata, x, work_Ax, 0);
+  mat_vec(Adata_x, Adata_p, Adata_i, data.n, data.m, x, work_Ax, 0);
   vec_add_scaled(work_z_prev, work_Ax, z, data.m, -1);
   if (settings.scaling && !settings.scaled_termination) return vec_scaled_norm_inf(scaling_Einv, work_z_prev, data.m);
   return vec_norm_inf(work_z_prev, data.m);
 }
-
 
 c_float compute_pri_tol(c_float eps_abs, c_float eps_rel) {
   c_float max_rel_eps, temp_rel_eps;
@@ -89,13 +87,17 @@ c_float compute_pri_tol(c_float eps_abs, c_float eps_rel) {
 
 c_float compute_dua_res(c_float *x, c_float *y) {
   prea_vec_copy(qdata, work_x_prev, data.n);
-  mat_vec(&Pdata, x, work_Px, 0);
-  mat_tpose_vec(&Pdata, x, work_Px, 1, 1);
+
+  mat_vec(Pdata_x, Pdata_p, Pdata_i, data.n, data.m, x, work_Px, 0);
+  mat_tpose_vec(Pdata_x, Pdata_p, Pdata_i, data.n, data.m, x, work_Px, 1, 1);
+
   vec_add_scaled(work_x_prev, work_x_prev, work_Px, data.n, 1);
+
   if (data.m > 0) {
-    mat_tpose_vec(&Adata, y, work_Aty, 0, 0);
+    mat_tpose_vec(Adata_x, Adata_p, Adata_i, data.n, data.m, y, work_Aty, 0, 0);
     vec_add_scaled(work_x_prev, work_x_prev, work_Aty, data.n, 1);
   }
+
   if (settings.scaling && !settings.scaled_termination) return scaling.cinv * vec_scaled_norm_inf(scaling_Dinv, work_x_prev, data.n);
   return vec_norm_inf(work_x_prev, data.n);
 }
@@ -136,7 +138,7 @@ c_int is_primal_infeasible(c_float eps_prim_inf) {
   if (norm_delta_y > OSQP_DIVISION_TOL) {
     for (i = 0; i < data.m; i++) ineq_lhs += udata[i] * c_max(work_delta_y[i], 0) + ldata[i] * c_min(work_delta_y[i], 0);
     if (ineq_lhs < eps_prim_inf * norm_delta_y) {
-      mat_tpose_vec(&Adata, work_delta_y, work_Atdelta_y, 0, 0);
+      mat_tpose_vec(Adata_x, Adata_p, Adata_i, data.n, data.m, work_delta_y, work_Atdelta_y, 0, 0);
       if (settings.scaling && !settings.scaled_termination) vec_ew_prod(scaling_Dinv, work_Atdelta_y, work_Atdelta_y, data.n);
       return vec_norm_inf(work_Atdelta_y, data.n) < eps_prim_inf * norm_delta_y;
     }
@@ -155,11 +157,14 @@ c_int is_dual_infeasible(c_float eps_dual_inf) {
   }
   if (norm_delta_x > OSQP_DIVISION_TOL) {
     if (vec_prod(qdata, work_delta_x, data.n) < cost_scaling * eps_dual_inf * norm_delta_x) {
-      mat_vec(&Pdata, work_delta_x, work_Pdelta_x, 0);
-      mat_tpose_vec(&Pdata, work_delta_x, work_Pdelta_x, 1, 1);
+      mat_vec(Pdata_x, Pdata_p, Pdata_i, data.n, data.m, work_delta_x, work_Pdelta_x, 0);
+      mat_tpose_vec(Pdata_x, Pdata_p, Pdata_i, data.n, data.m, work_delta_x, work_Pdelta_x, 1, 1);
+
       if (settings.scaling && !settings.scaled_termination) vec_ew_prod(scaling_Dinv, work_Pdelta_x, work_Pdelta_x, data.n);
       if (vec_norm_inf(work_Pdelta_x, data.n) < cost_scaling * eps_dual_inf * norm_delta_x) {
-        mat_vec(&Adata, work_delta_x, work_Adelta_x, 0);
+
+        mat_vec(Adata_x, Adata_p, Adata_i, data.n, data.m, work_delta_x, work_Adelta_x, 0);
+
         if (settings.scaling && !settings.scaled_termination) vec_ew_prod(scaling_Einv, work_Adelta_x, work_Adelta_x, data.m);
         for (i = 0; i < data.m; i++) {
           if (((udata[i] < OSQP_INFTY * MIN_SCALING) && (work_Adelta_x[i] > eps_dual_inf * norm_delta_x)) ||
@@ -172,6 +177,7 @@ c_int is_dual_infeasible(c_float eps_dual_inf) {
   return 0;
 }
 
+// ... (El resto: store_solution, update_info, etc. sin cambios) ...
 void store_solution(void) {
   if ((info.status_val != OSQP_PRIMAL_INFEASIBLE) &&
       (info.status_val != OSQP_PRIMAL_INFEASIBLE_INACCURATE) &&

@@ -1,7 +1,6 @@
 #include "scaling.h"
 #include "workspace.h"
 
-// SIN argumentos 'work'
 c_int scale_data(void) {
   scaling.c = 1.0;
   vec_set_scalar(scaling_D, 1., data.n);
@@ -13,13 +12,17 @@ c_int scale_data(void) {
 }
 
 c_int unscale_data(void) {
-  mat_mult_scalar(&Pdata, scaling.cinv);
-  mat_premult_diag(&Pdata, scaling_Dinv);
-  mat_postmult_diag(&Pdata, scaling_Dinv);
+  // Usamos los arrays globales Pdata_x, Pdata_p, etc.
+  mat_mult_scalar(Pdata_x, Pdata_p, data.n, scaling.cinv);
+  mat_premult_diag(Pdata_x, Pdata_p, Pdata_i, data.n, scaling_Dinv);
+  mat_postmult_diag(Pdata_x, Pdata_p, data.n, scaling_Dinv);
+
   vec_mult_scalar(qdata, scaling.cinv, data.n);
   vec_ew_prod(scaling_Dinv, qdata, qdata, data.n);
-  mat_premult_diag(&Adata, scaling_Einv);
-  mat_postmult_diag(&Adata, scaling_Dinv);
+
+  mat_premult_diag(Adata_x, Adata_p, Adata_i, data.n, scaling_Einv);
+  mat_postmult_diag(Adata_x, Adata_p, data.n, scaling_Dinv);
+
   vec_ew_prod(scaling_Einv, ldata, ldata, data.m);
   vec_ew_prod(scaling_Einv, udata, udata, data.m);
   return 0;

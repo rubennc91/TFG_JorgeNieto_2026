@@ -16,25 +16,19 @@
 #define OSQP_N 15
 #define OSQP_M 19
 
-// --- IMPORTANTE: Usamos extern para no redefinir la variable que ya está en workspace.c ---
+// Usamos extern para referenciar el workspace global
 extern OSQPWorkspace workspace;
 
 void init_workspace_manually() {
-    // Conectar punteros de estructura 'scaling' a arrays globales
-    // Esto es necesario por si scaling.c accede a scaling.D
-    scaling.D    = scaling_D;
-    scaling.Dinv = scaling_Dinv;
-    scaling.E    = scaling_E;
-    scaling.Einv = scaling_Einv;
+    // CORRECCIÓN: Eliminadas todas las asignaciones de punteros (scaling.D = ...)
+    // Ya no las necesitamos porque accedemos a los arrays globales directamente.
+
+    // Solo inicializamos escalares si es necesario
     scaling.c    = 1.0;
     scaling.cinv = 1.0;
-
-    // Conectar solution pointers
-    solution.x = xsolution;
-    solution.y = ysolution;
 }
 
-// Declaraciones externas (asegúrate de que coinciden con mpc_util.h actualizado)
+// Declaraciones externas
 void referencia(c_float* q_new, c_float ref);
 void calculateV(c_float Ax[2], c_float Ex[2][2], c_float u[2], c_float v[2]);
 void atualizar_restricao(c_float* l_new, c_float* u_new, c_float* x, c_float* v00);
@@ -86,7 +80,6 @@ void myFunction(float x_ini[3], float Vsd, float Vsq, float iL, float u00[2], fl
     prea_vec_copy(udata, u_new, OSQP_M);
 
     Ax01 = - w*x_ini[0] - (R*x_ini[1])/L;
-
     float term = (3.0f * (Vsd * x_ini[0] + Vsq * x_ini[1] - R * (x_ini[0] * x_ini[0] + x_ini[1] * x_ini[1]))) / (2.0f * Cap * x_ini[2]);
     float term2 = 1.0f / (2.0f * Cap * x_ini[2]);
     Ax02 = (1.0f / (Cap * Rl) + term / x_ini[2]) * (x_ini[2] / (Cap * Rl) - term) -

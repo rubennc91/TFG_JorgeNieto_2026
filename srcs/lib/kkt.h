@@ -7,38 +7,26 @@ extern "C" {
 
 # include "types.h"
 
-// --- CAMBIO: Comentamos esto porque cs.h no existe y no lo queremos ---
-// #  include "cs.h"
+// Actualizar KKT usando P
+// Recibe los arrays crudos de KKT y P
+void update_KKT_P(c_float      *KKT_x,
+                  const c_float *P_x,
+                  const c_int   *P_p,
+                  c_int          P_n,
+                  const c_int   *PtoKKT,
+                  const c_float  param1,
+                  const c_int   *Pdiag_idx,
+                  const c_int    Pdiag_n);
 
-// Comentamos la declaración de form_KKT porque usa memoria dinámica
-/*
-csc* form_KKT(const csc  *P,
-              const  csc *A,
-              c_int       format,
-              c_float     param1,
-              c_float    *param2,
-              c_int      *PtoKKT,
-              c_int      *AtoKKT,
-              c_int     **Pdiag_idx,
-              c_int      *Pdiag_n,
-              c_int      *param2toKKT);
-*/
-// ---------------------------------------------------------------------
+// Actualizar KKT usando A
+void update_KKT_A(c_float      *KKT_x,
+                  const c_float *A_x,
+                  const c_int   *A_p,
+                  c_int          A_n,
+                  const c_int   *AtoKKT);
 
-// --- ESTAS SON LAS QUE SÍ NECESITAMOS (Mantener descomentadas) ---
-
-void update_KKT_P(csc          *KKT,
-                  const csc    *P,
-                  const c_int  *PtoKKT,
-                  const c_float param1,
-                  const c_int  *Pdiag_idx,
-                  const c_int   Pdiag_n);
-
-void update_KKT_A(csc         *KKT,
-                  const csc   *A,
-                  const c_int *AtoKKT);
-
-void update_KKT_param2(csc           *KKT,
+// Actualizar KKT con rho
+void update_KKT_param2(c_float       *KKT_x,
                        const c_float *param2,
                        const c_int   *param2toKKT,
                        const c_int    m);

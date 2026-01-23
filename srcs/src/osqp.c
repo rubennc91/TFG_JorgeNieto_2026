@@ -52,7 +52,6 @@ c_int osqp_solve(void) {
   return exitflag;
 }
 
-// Funciones de actualización
 c_int osqp_update_lin_cost(const c_float *q_new) {
   prea_vec_copy(q_new, qdata, data.n);
   if (settings.scaling) {
@@ -75,29 +74,29 @@ c_int osqp_update_bounds(const c_float *l_new, const c_float *u_new) {
 }
 
 c_int osqp_update_P(const c_float *Px_new, const c_int *Px_new_idx, c_int P_new_n) {
-  c_int i, nnzP = Pdata.p[Pdata.n];
+  c_int i, nnzP = Pdata_p[data.n]; // Usamos array global
   if (settings.scaling) unscale_data();
   if (Px_new_idx) {
-    for (i = 0; i < P_new_n; i++) Pdata.x[Px_new_idx[i]] = Px_new[i];
+    for (i = 0; i < P_new_n; i++) Pdata_x[Px_new_idx[i]] = Px_new[i];
   } else {
-    for (i = 0; i < nnzP; i++) Pdata.x[i] = Px_new[i];
+    for (i = 0; i < nnzP; i++) Pdata_x[i] = Px_new[i];
   }
   if (settings.scaling) scale_data();
-  update_linsys_solver_matrices_qdldl(&linsys_solver, &Pdata, &Adata);
+  update_linsys_solver_matrices_qdldl();
   reset_info(&info);
   return 0;
 }
 
 c_int osqp_update_A(const c_float *Ax_new, const c_int *Ax_new_idx, c_int A_new_n) {
-  c_int i, nnzA = Adata.p[Adata.n];
+  c_int i, nnzA = Adata_p[data.n];
   if (settings.scaling) unscale_data();
   if (Ax_new_idx) {
-    for (i = 0; i < A_new_n; i++) Adata.x[Ax_new_idx[i]] = Ax_new[i];
+    for (i = 0; i < A_new_n; i++) Adata_x[Ax_new_idx[i]] = Ax_new[i];
   } else {
-    for (i = 0; i < nnzA; i++) Adata.x[i] = Ax_new[i];
+    for (i = 0; i < nnzA; i++) Adata_x[i] = Ax_new[i];
   }
   if (settings.scaling) scale_data();
-  update_linsys_solver_matrices_qdldl(&linsys_solver, &Pdata, &Adata);
+  update_linsys_solver_matrices_qdldl();
   reset_info(&info);
   return 0;
 }
@@ -115,5 +114,5 @@ c_int osqp_update_rho(c_float rho_new) {
       work_rho_inv_vec[i] = 1. / work_rho_vec[i];
     }
   }
-  return update_linsys_solver_rho_vec_qdldl(&linsys_solver, work_rho_vec);
+  return update_linsys_solver_rho_vec_qdldl(work_rho_vec);
 }
