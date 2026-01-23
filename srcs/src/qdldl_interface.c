@@ -2,6 +2,7 @@
 #include "qdldl.h"
 #include "qdldl_interface.h"
 #include "util.h"
+#include "kkt.h"
 
 // Nota: No incluimos amd.h ni kkt.h dinámicos si no son necesarios para evitar errores de linkado
 // si tus archivos estáticos ya tienen la matriz KKT pre-calculada.

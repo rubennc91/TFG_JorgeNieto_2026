@@ -1,45 +1,33 @@
 #include "scaling.h"
-#include "workspace.h" // Necesario
+#include "workspace.h"
 
-#if EMBEDDED != 1
-// (limit_scaling y compute_inf_norm... omitidos, igual que antes)
-#endif
-
-c_int scale_data(OSQPWorkspace *work) {
-  // Usa global scaling y data
-  vec_set_scalar(scaling.D, 1., data.n);
-  vec_set_scalar(scaling.Dinv, 1., data.n);
-  vec_set_scalar(scaling.E, 1., data.m);
-  vec_set_scalar(scaling.Einv, 1., data.m);
-  vec_set_scalar(scaling.c, 1., 1);
-  scaling.cinv = 1.;
-
-  // (resto de lógica de scaling usando globals si es necesario,
-  // pero para embedded 2 con scaling activado ya está pre-calculado
-  // y estas funciones suelen ser dummy o estáticas)
+// SIN argumentos 'work'
+c_int scale_data(void) {
+  scaling.c = 1.0;
+  vec_set_scalar(scaling_D, 1., data.n);
+  vec_set_scalar(scaling_Dinv, 1., data.n);
+  vec_set_scalar(scaling_E, 1., data.m);
+  vec_set_scalar(scaling_Einv, 1., data.m);
+  scaling.cinv = 1.0;
   return 0;
 }
 
-c_int unscale_data(OSQPWorkspace *work) {
-  // Unscale cost (usando Pdata, qdata, scaling)
+c_int unscale_data(void) {
   mat_mult_scalar(&Pdata, scaling.cinv);
-  mat_premult_diag(&Pdata, scaling.Dinv);
-  mat_postmult_diag(&Pdata, scaling.Dinv);
+  mat_premult_diag(&Pdata, scaling_Dinv);
+  mat_postmult_diag(&Pdata, scaling_Dinv);
   vec_mult_scalar(qdata, scaling.cinv, data.n);
-  vec_ew_prod(scaling.Dinv, qdata, qdata, data.n);
-
-  // Unscale constraints (Adata, ldata, udata)
-  mat_premult_diag(&Adata, scaling.Einv);
-  mat_postmult_diag(&Adata, scaling.Dinv);
-  vec_ew_prod(scaling.Einv, ldata, ldata, data.m);
-  vec_ew_prod(scaling.Einv, udata, udata, data.m);
-
+  vec_ew_prod(scaling_Dinv, qdata, qdata, data.n);
+  mat_premult_diag(&Adata, scaling_Einv);
+  mat_postmult_diag(&Adata, scaling_Dinv);
+  vec_ew_prod(scaling_Einv, ldata, ldata, data.m);
+  vec_ew_prod(scaling_Einv, udata, udata, data.m);
   return 0;
 }
 
-c_int unscale_solution(OSQPWorkspace *work) {
-  vec_ew_prod(scaling.D, work->x, work->x, data.n);
-  vec_ew_prod(scaling.E, work->y, work->y, data.m);
-  vec_mult_scalar(work->y, scaling.c, data.m);
+c_int unscale_solution(void) {
+  vec_ew_prod(scaling_D, xsolution, xsolution, data.n);
+  vec_ew_prod(scaling_E, ysolution, ysolution, data.m);
+  vec_mult_scalar(ysolution, scaling.cinv, data.m);
   return 0;
 }
