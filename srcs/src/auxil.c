@@ -8,14 +8,14 @@
 #include "qdldl_interface.h"
 #include "workspace.h"
 
-void c_strcpy(char dest[], const char source[]) {
-    int i = 0;
-    while (source[i] != '\0') {
-        dest[i] = source[i];
-        i++;
-    }
-    dest[i] = '\0';
-}
+//void c_strcpy(char dest[], const char source[]) {
+//    int i = 0;
+//    while (source[i] != '\0') {
+//        dest[i] = source[i];
+//        i++;
+//    }
+//    dest[i] = '\0';
+//}
 
 void cold_start(void) {
   vec_set_scalar(work_x, 0., data.n);

@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute_dua_res'
+================================================================
+* Date:           Sat Feb  7 11:28:45 2026
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.644 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_43_1  |       30|       30|         2|          -|          -|    15|        no|
+        |- VITIS_LOOP_85_1  |       19|       19|         1|          -|          -|    19|        no|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 0
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 4 
+3 --> 2 
+4 --> 4 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.58>
+ST_1 : Operation 5 [1/1] (1.58ns)   --->   "%br_ln43 = br void" [srcs/src/lin_alg.c:43]   --->   Operation 5 'br' 'br_ln43' <Predicate = true> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 2.32>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%i = phi i4 0, void, i4 %i_72, void %.split22"   --->   Operation 6 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (1.73ns)   --->   "%i_72 = add i4 %i, i4 1" [srcs/src/lin_alg.c:43]   --->   Operation 7 'add' 'i_72' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%zext_ln43 = zext i4 %i" [srcs/src/lin_alg.c:43]   --->   Operation 8 'zext' 'zext_ln43' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (1.30ns)   --->   "%icmp_ln43 = icmp_eq  i4 %i, i4 15" [srcs/src/lin_alg.c:43]   --->   Operation 9 'icmp' 'icmp_ln43' <Predicate = true> <Delay = 1.30> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%empty = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 15, i64 15, i64 15"   --->   Operation 10 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln43 = br i1 %icmp_ln43, void %.split22, void %prea_vec_copy.exit.preheader" [srcs/src/lin_alg.c:43]   --->   Operation 11 'br' 'br_ln43' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%qdata_addr = getelementptr i32 %qdata, i64 0, i64 %zext_ln43" [srcs/src/lin_alg.c:43]   --->   Operation 12 'getelementptr' 'qdata_addr' <Predicate = (!icmp_ln43)> <Delay = 0.00>
+ST_2 : Operation 13 [2/2] (2.32ns)   --->   "%qdata_load = load i4 %qdata_addr" [srcs/src/lin_alg.c:43]   --->   Operation 13 'load' 'qdata_load' <Predicate = (!icmp_ln43)> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 15> <RAM>
+ST_2 : Operation 14 [1/1] (1.58ns)   --->   "%br_ln85 = br void %prea_vec_copy.exit" [srcs/src/lin_alg.c:85]   --->   Operation 14 'br' 'br_ln85' <Predicate = (icmp_ln43)> <Delay = 1.58>
+
+State 3 <SV = 2> <Delay = 4.64>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%specloopname_ln43 = specloopname void @_ssdm_op_SpecLoopName, void @empty_56" [srcs/src/lin_alg.c:43]   --->   Operation 15 'specloopname' 'specloopname_ln43' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/2] (2.32ns)   --->   "%qdata_load = load i4 %qdata_addr" [srcs/src/lin_alg.c:43]   --->   Operation 16 'load' 'qdata_load' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 15> <RAM>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%work_x_prev_addr = getelementptr i32 %work_x_prev, i64 0, i64 %zext_ln43" [srcs/src/lin_alg.c:43]   --->   Operation 17 'getelementptr' 'work_x_prev_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (2.32ns)   --->   "%store_ln43 = store i32 %qdata_load, i4 %work_x_prev_addr" [srcs/src/lin_alg.c:43]   --->   Operation 18 'store' 'store_ln43' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 15> <RAM>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%br_ln0 = br void"   --->   Operation 19 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 2.32>
+ST_4 : Operation 20 [1/1] (0.00ns)   --->   "%i_73 = phi i4 %i_74, void %prea_vec_copy.exit, i4 0, void %prea_vec_copy.exit.preheader"   --->   Operation 20 'phi' 'i_73' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln85 = zext i4 %i_73" [srcs/src/lin_alg.c:85]   --->   Operation 21 'zext' 'zext_ln85' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "%empty_114 = speclooptripcount i32 @_ssdm_op_SpecLoopTripCount, i64 19, i64 19, i64 19"   --->   Operation 22 'speclooptripcount' 'empty_114' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 23 [1/1] (0.00ns)   --->   "%specloopname_ln83 = specloopname void @_ssdm_op_SpecLoopName, void @empty_57" [srcs/src/lin_alg.c:83]   --->   Operation 23 'specloopname' 'specloopname_ln83' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "%work_Px_addr = getelementptr i32 %work_Px, i64 0, i64 %zext_ln85" [srcs/src/lin_alg.c:85]   --->   Operation 24 'getelementptr' 'work_Px_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 25 [1/1] (2.32ns)   --->   "%store_ln85 = store i32 0, i4 %work_Px_addr" [srcs/src/lin_alg.c:85]   --->   Operation 25 'store' 'store_ln85' <Predicate = true> <Delay = 2.32> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 15> <RAM>
+ST_4 : Operation 26 [1/1] (1.73ns)   --->   "%i_74 = add i4 %i_73, i4 1" [srcs/src/lin_alg.c:85]   --->   Operation 26 'add' 'i_74' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln0 = br void %prea_vec_copy.exit"   --->   Operation 27 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 1.59ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', srcs/src/lin_alg.c:43) [8]  (1.59 ns)
+
+ <State 2>: 2.32ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', srcs/src/lin_alg.c:43) [8]  (0 ns)
+	'getelementptr' operation ('qdata_addr', srcs/src/lin_alg.c:43) [16]  (0 ns)
+	'load' operation ('qdata_load', srcs/src/lin_alg.c:43) on array 'qdata' [17]  (2.32 ns)
+
+ <State 3>: 4.64ns
+The critical path consists of the following:
+	'load' operation ('qdata_load', srcs/src/lin_alg.c:43) on array 'qdata' [17]  (2.32 ns)
+	'store' operation ('store_ln43', srcs/src/lin_alg.c:43) of variable 'qdata_load', srcs/src/lin_alg.c:43 on array 'work_x_prev' [19]  (2.32 ns)
+
+ <State 4>: 2.32ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', srcs/src/lin_alg.c:85) [24]  (0 ns)
+	'getelementptr' operation ('work_Px_addr', srcs/src/lin_alg.c:85) [28]  (0 ns)
+	'store' operation ('store_ln85', srcs/src/lin_alg.c:85) of constant 0 on array 'work_Px' [29]  (2.32 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

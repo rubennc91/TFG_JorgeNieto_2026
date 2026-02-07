@@ -1,0 +1,6 @@
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ruben.nieto' on host 'mp-5cg0326r5c' (Windows NT_amd64 version 6.2) on Sat Feb 07 12:00:00 +0100 2026
+INFO: [HLS 200-10] In directory 'C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026/hls_project/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.

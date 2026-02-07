@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1770460150715">
+  <ports id="2" name="qdata" type="PortType" coreName="RAM" coreId="0" bitwidth="32" iftype="IfTypeRegister" arraysize="15">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="4" name="work_x_prev" type="PortType" coreName="RAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="15">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <ports id="5" name="work_Px" type="PortType" coreName="RAM" coreId="0" bitwidth="32" direction="DirOut" iftype="IfTypeRegister" arraysize="15">
+    <dataInputObjs>getelementptr</dataInputObjs>
+  </ports>
+  <edges id="33" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="36" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="37" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="38" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="39" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="42" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="43" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="46" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="47" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="48" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="49" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="50" source_obj="//@ports.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="53" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="54" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="55" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@ports.1"/>
+  <edges id="57" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="58" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="59" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="60" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="61" source_obj="//@blocks.4/@node_objs.4" sink_obj="//@blocks.4/@node_objs.0" is_back_edge="1"/>
+  <edges id="62" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.4/@node_objs.0" is_back_edge="1"/>
+  <edges id="64" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="65" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="66" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@ports.2"/>
+  <edges id="68" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="71" source_obj="//@blocks.4/@node_objs.2" sink_obj="//@blocks.4/@node_objs.3"/>
+  <edges id="72" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.4"/>
+  <edges id="74" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.4/@node_objs.5"/>
+  <edges id="95" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="96" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="97" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="98" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="99" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="100" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.4" is_back_edge="1"/>
+  <blocks id="7" name="block_7" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_14</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="br_ln43" lineNumber="43" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="1344996950" contextFuncName="prea_vec_copy" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <controlInputObjs>block_14</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>43</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="14" name="block_14" type="BlockType">
+    <controlInputObjs>block_7</controlInputObjs>
+    <controlInputObjs>.split22</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>prea_vec_copy.exit.preheader</controlOutputObjs>
+    <controlOutputObjs>.split22</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="i" originalName="i" coreId="1932475402" bitwidth="4" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <controlInputObjs>block_7</controlInputObjs>
+      <controlInputObjs>.split22</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="i_72" lineNumber="43" originalName="i" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="i_72_fu_91_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="prea_vec_copy" bitwidth="4" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="zext_ln43" lineNumber="43" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="zext_ln43_fu_97_p1" coreId="4278283632" contextFuncName="prea_vec_copy" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="icmp_ln43" lineNumber="43" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln43_fu_102_p2" opType="icmp" coreId="1492515312" contextFuncName="prea_vec_copy" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.3" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="br_ln43" lineNumber="43" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="0" contextFuncName="prea_vec_copy" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split22</controlInputObjs>
+      <controlInputObjs>prea_vec_copy.exit.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>43</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="21" name=".split22" type="BlockType">
+    <controlInputObjs>block_14</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_14</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="qdata_addr" lineNumber="43" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="0" contextFuncName="prea_vec_copy" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <dataInputObjs>qdata</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="qdata_load" lineNumber="43" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="prea_vec_copy" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="work_x_prev_addr" lineNumber="43" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="0" contextFuncName="prea_vec_copy" bitwidth="4" opcode="getelementptr" nodeLabel="2.0" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>work_x_prev</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="work_x_prev_addr_write_ln43" lineNumber="43" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="prea_vec_copy" opcode="store" nodeLabel="2.0" m_display="0" m_delay="2.32" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="43" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="prea_vec_copy"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>getelementptr</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="br_ln0" coreId="1865366538" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_14</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>43</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="23" name="prea_vec_copy.exit.preheader" type="BlockType">
+    <controlInputObjs>block_14</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>prea_vec_copy.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="br_ln85" lineNumber="85" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="1819306356" contextFuncName="mat_vec" opcode="br" nodeLabel="1.0" m_display="0" m_delay="1.58" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="85" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="mat_vec"/>
+      <controlInputObjs>prea_vec_copy.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>85</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="32" name="prea_vec_copy.exit" type="BlockType">
+    <controlInputObjs>prea_vec_copy.exit.preheader</controlInputObjs>
+    <controlInputObjs>prea_vec_copy.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>prea_vec_copy.exit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="i_73" originalName="i" coreId="4230703142" bitwidth="4" opcode="phi" nodeLabel="3.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <controlInputObjs>prea_vec_copy.exit</controlInputObjs>
+      <controlInputObjs>prea_vec_copy.exit.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="zext_ln85" lineNumber="85" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="zext_ln85_fu_108_p1" coreId="1498669616" contextFuncName="mat_vec" bitwidth="64" opcode="zext" nodeLabel="3.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="85" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="mat_vec"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="work_Px_addr" lineNumber="85" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="4165692422" contextFuncName="mat_vec" bitwidth="4" opcode="getelementptr" nodeLabel="3.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="85" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="mat_vec"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>work_Px</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="work_Px_addr_write_ln85" lineNumber="85" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="mat_vec" opcode="store" nodeLabel="3.0" m_display="0" m_delay="2.32" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="85" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="mat_vec"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="i_74" lineNumber="85" originalName="i" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="i_74_fu_113_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="mat_vec" bitwidth="4" opcode="add" nodeLabel="3.0" m_display="0" m_delay="1.73" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="85" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="mat_vec"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="br_ln0" coreId="4170476775" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <controlInputObjs>prea_vec_copy.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>85</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <regnodes realName="i_74_reg_137">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln43_reg_124">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="qdata_addr_reg_132">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="i_73_reg_80">
+    <nodeIds>24</nodeIds>
+  </regnodes>
+  <regnodes realName="i_72_reg_119">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_69">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <expressionNodes realName="zext_ln43_fu_97">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="qdata_addr_gep_fu_28">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln85_fu_108">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_74_fu_113">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_72_fu_91">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="work_Px_addr_gep_fu_55">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_73_phi_fu_84">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="work_x_prev_addr_gep_fu_41">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln43_fu_102">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_73">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <memoryPorts dataString="qdata">
+    <nodeIds>17</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="work_Px">
+    <nodeIds>29</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="work_x_prev">
+    <nodeIds>19</nodeIds>
+  </memoryPorts>
+  <ioPorts name="qdata(p0)">
+    <contents name="load">
+      <nodeIds>17</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="work_Px(p0)">
+    <contents name="store">
+      <nodeIds>29</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="work_x_prev(p0)">
+    <contents name="store">
+      <nodeIds>19</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="2" latency="2"/>
+      <operations id="22" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="2"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="compute_dua_res" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="-1" mMaxLatency="-1">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>7</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_43_1" mII="-1" mDepth="-1" mMinTripCount="15" mMaxTripCount="15" mMinLatency="30" mMaxLatency="30" mType="1">
+      <basicBlocks>14</basicBlocks>
+      <basicBlocks>21</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>23</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_85_1" mII="-1" mDepth="-1" mMinTripCount="19" mMaxTripCount="19" mMinLatency="19" mMaxLatency="19" mType="1">
+      <basicBlocks>32</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

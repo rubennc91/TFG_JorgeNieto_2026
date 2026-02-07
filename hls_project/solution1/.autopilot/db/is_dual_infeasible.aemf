@@ -1,0 +1,1336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1770460153896">
+  <ports id="1" name="eps_dual_inf" type="PortType" originalName="eps_dual_inf" coreId="1" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="work_delta_x" type="PortType" coreName="RAM" coreId="395" bitwidth="32" iftype="IfTypeRegister" arraysize="15">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="5" name="qdata" type="PortType" coreName="RAM" coreId="1497174400" bitwidth="32" iftype="IfTypeRegister" arraysize="15">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <edges id="107" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="108" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="111" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="112" source_obj="//@blocks.2/@node_objs.28" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="113" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.0" is_back_edge="1"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="117" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.1/@node_objs.1" is_back_edge="1"/>
+  <edges id="118" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.1" is_back_edge="1"/>
+  <edges id="119" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="122" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="123" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.4"/>
+  <edges id="126" source_obj="//@blocks.1/@node_objs.4" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.1/@node_objs.5"/>
+  <edges id="129" source_obj="//@ports.1" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="132" source_obj="//@blocks.1/@node_objs.3" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="133" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="134" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="137" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.3"/>
+  <edges id="142" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.4"/>
+  <edges id="143" source_obj="//@blocks.2/@node_objs.3" sink_obj="//@blocks.2/@node_objs.5"/>
+  <edges id="146" source_obj="//@blocks.2/@node_objs.4" sink_obj="//@blocks.2/@node_objs.6"/>
+  <edges id="149" source_obj="//@blocks.2/@node_objs.6" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="150" source_obj="//@blocks.2/@node_objs.5" sink_obj="//@blocks.2/@node_objs.7"/>
+  <edges id="151" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.8"/>
+  <edges id="153" source_obj="//@blocks.2/@node_objs.7" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="154" source_obj="//@blocks.2/@node_objs.8" sink_obj="//@blocks.2/@node_objs.9"/>
+  <edges id="155" source_obj="//@blocks.2/@node_objs.2" sink_obj="//@blocks.2/@node_objs.10"/>
+  <edges id="158" source_obj="//@blocks.2/@node_objs.10" sink_obj="//@blocks.2/@node_objs.11"/>
+  <edges id="159" source_obj="//@blocks.2/@node_objs.9" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="160" source_obj="//@blocks.2/@node_objs.11" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="161" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.12"/>
+  <edges id="162" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.13"/>
+  <edges id="164" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.14"/>
+  <edges id="167" source_obj="//@blocks.2/@node_objs.13" sink_obj="//@blocks.2/@node_objs.15"/>
+  <edges id="168" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.16"/>
+  <edges id="170" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.17"/>
+  <edges id="173" source_obj="//@blocks.2/@node_objs.16" sink_obj="//@blocks.2/@node_objs.18"/>
+  <edges id="174" source_obj="//@blocks.2/@node_objs.14" sink_obj="//@blocks.2/@node_objs.19"/>
+  <edges id="176" source_obj="//@blocks.2/@node_objs.15" sink_obj="//@blocks.2/@node_objs.20"/>
+  <edges id="178" source_obj="//@blocks.2/@node_objs.20" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="179" source_obj="//@blocks.2/@node_objs.19" sink_obj="//@blocks.2/@node_objs.21"/>
+  <edges id="180" source_obj="//@blocks.2/@node_objs.17" sink_obj="//@blocks.2/@node_objs.22"/>
+  <edges id="182" source_obj="//@blocks.2/@node_objs.18" sink_obj="//@blocks.2/@node_objs.23"/>
+  <edges id="184" source_obj="//@blocks.2/@node_objs.23" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="185" source_obj="//@blocks.2/@node_objs.22" sink_obj="//@blocks.2/@node_objs.24"/>
+  <edges id="186" source_obj="//@blocks.2/@node_objs.21" sink_obj="//@blocks.2/@node_objs.25"/>
+  <edges id="187" source_obj="//@blocks.2/@node_objs.24" sink_obj="//@blocks.2/@node_objs.25"/>
+  <edges id="188" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.26"/>
+  <edges id="189" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.26"/>
+  <edges id="190" source_obj="//@blocks.2/@node_objs.25" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="191" source_obj="//@blocks.2/@node_objs.26" sink_obj="//@blocks.2/@node_objs.27"/>
+  <edges id="192" source_obj="//@blocks.2/@node_objs.27" sink_obj="//@blocks.2/@node_objs.28"/>
+  <edges id="193" source_obj="//@blocks.2/@node_objs.12" sink_obj="//@blocks.2/@node_objs.28"/>
+  <edges id="194" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.28"/>
+  <edges id="195" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2/@node_objs.29"/>
+  <edges id="196" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="198" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="201" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="202" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="204" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="206" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="207" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="208" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="211" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="212" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="213" source_obj="//@blocks.3/@node_objs.7" sink_obj="//@blocks.3/@node_objs.8"/>
+  <edges id="214" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.3/@node_objs.8"/>
+  <edges id="215" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.8"/>
+  <edges id="216" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="217" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.0" is_back_edge="1"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="221" source_obj="//@blocks.6/@node_objs.6" sink_obj="//@blocks.5/@node_objs.1" is_back_edge="1"/>
+  <edges id="222" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.1" is_back_edge="1"/>
+  <edges id="224" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="225" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="227" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="228" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="230" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="231" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="232" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="233" source_obj="//@ports.2" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="235" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="236" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="237" source_obj="//@ports.1" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="239" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="240" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="241" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="242" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="243" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="247" source_obj="//@blocks.6/@node_objs.4" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="248" source_obj="//@blocks.6/@node_objs.5" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="249" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6/@node_objs.7"/>
+  <edges id="250" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="251" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.7/@node_objs.0"/>
+  <edges id="252" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.7/@node_objs.1"/>
+  <edges id="254" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.2"/>
+  <edges id="257" source_obj="//@blocks.7/@node_objs.1" sink_obj="//@blocks.7/@node_objs.3"/>
+  <edges id="258" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.4"/>
+  <edges id="260" source_obj="//@blocks.7/@node_objs.4" sink_obj="//@blocks.7/@node_objs.5"/>
+  <edges id="263" source_obj="//@blocks.7/@node_objs.4" sink_obj="//@blocks.7/@node_objs.6"/>
+  <edges id="264" source_obj="//@blocks.7/@node_objs.2" sink_obj="//@blocks.7/@node_objs.7"/>
+  <edges id="266" source_obj="//@blocks.7/@node_objs.3" sink_obj="//@blocks.7/@node_objs.8"/>
+  <edges id="268" source_obj="//@blocks.7/@node_objs.8" sink_obj="//@blocks.7/@node_objs.9"/>
+  <edges id="269" source_obj="//@blocks.7/@node_objs.7" sink_obj="//@blocks.7/@node_objs.9"/>
+  <edges id="270" source_obj="//@blocks.7/@node_objs.5" sink_obj="//@blocks.7/@node_objs.10"/>
+  <edges id="272" source_obj="//@blocks.7/@node_objs.6" sink_obj="//@blocks.7/@node_objs.11"/>
+  <edges id="274" source_obj="//@blocks.7/@node_objs.11" sink_obj="//@blocks.7/@node_objs.12"/>
+  <edges id="275" source_obj="//@blocks.7/@node_objs.10" sink_obj="//@blocks.7/@node_objs.12"/>
+  <edges id="276" source_obj="//@blocks.7/@node_objs.9" sink_obj="//@blocks.7/@node_objs.13"/>
+  <edges id="277" source_obj="//@blocks.7/@node_objs.12" sink_obj="//@blocks.7/@node_objs.13"/>
+  <edges id="278" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.7/@node_objs.14"/>
+  <edges id="279" source_obj="//@blocks.7/@node_objs.0" sink_obj="//@blocks.7/@node_objs.14"/>
+  <edges id="280" source_obj="//@blocks.7/@node_objs.13" sink_obj="//@blocks.7/@node_objs.15"/>
+  <edges id="281" source_obj="//@blocks.7/@node_objs.14" sink_obj="//@blocks.7/@node_objs.15"/>
+  <edges id="282" source_obj="//@blocks.7/@node_objs.15" sink_obj="//@blocks.7/@node_objs.16"/>
+  <edges id="283" edge_type="CtrlEdge" source_obj="//@blocks.8" sink_obj="//@blocks.7/@node_objs.16"/>
+  <edges id="284" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.7/@node_objs.16"/>
+  <edges id="285" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.9/@node_objs.0"/>
+  <edges id="286" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.10/@node_objs.0"/>
+  <edges id="315" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="316" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.3"/>
+  <edges id="317" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="318" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="319" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="320" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.8"/>
+  <edges id="321" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="322" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.7"/>
+  <edges id="323" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="324" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5" is_back_edge="1"/>
+  <edges id="325" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.9"/>
+  <edges id="326" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.8"/>
+  <edges id="327" edge_type="CtrlEdge" source_obj="//@blocks.9" sink_obj="//@blocks.10"/>
+  <edges id="328" edge_type="CtrlEdge" source_obj="//@blocks.10" sink_obj="//@blocks.10" is_back_edge="1"/>
+  <blocks id="8" name="block_8" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_16</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="eps_dual_inf_read" lineNumber="149" originalName="eps_dual_inf" fileName="srcs/src/auxil.c" fileDirectory=".." coreId="825310754" contextFuncName="is_dual_infeasible" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="149" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>eps_dual_inf</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="br_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="29" contextFuncName="vec_norm_inf" opcode="br" m_display="0" m_delay="1.58" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <controlInputObjs>block_16</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/auxil.c">
+      <validLinenumbers>149</validLinenumbers>
+    </fileValidLineNumbers>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>14</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="16" name="block_16" type="BlockType">
+    <controlInputObjs>block_8</controlInputObjs>
+    <controlInputObjs>.split22</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>vec_norm_inf.exit</controlOutputObjs>
+    <controlOutputObjs>.split22</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="max" originalName="max" coreId="1498963008" bitwidth="32" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+      <controlInputObjs>block_8</controlInputObjs>
+      <controlInputObjs>.split22</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i" originalName="i" coreId="0" bitwidth="4" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <controlInputObjs>block_8</controlInputObjs>
+      <controlInputObjs>.split22</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="i_69" lineNumber="14" originalName="i" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="i_69_fu_159_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="vec_norm_inf" bitwidth="4" opcode="add" nodeLabel="1.0" m_display="0" m_delay="1.73" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="zext_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="zext_ln14_fu_165_p1" coreId="1499146304" contextFuncName="vec_norm_inf" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln14_fu_170_p2" opType="icmp" coreId="4247790145" contextFuncName="vec_norm_inf" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="1.3" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="757935403" contextFuncName="vec_norm_inf" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split22</controlInputObjs>
+      <controlInputObjs>vec_norm_inf.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>14</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="48" name=".split22" type="BlockType">
+    <controlInputObjs>block_16</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>block_16</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="work_delta_x_addr" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="4293533851" contextFuncName="vec_norm_inf" bitwidth="4" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>work_delta_x</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="19" name="work_delta_x_load" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="vec_norm_inf" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="bitcast_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="bitcast_ln14_fu_176_p1" coreId="4163381081" contextFuncName="vec_norm_inf" bitwidth="32" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>xor</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="tmp_40" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="tmp_40_fu_180_p4" coreId="4230554406" contextFuncName="vec_norm_inf" bitwidth="8" opcode="partselect" nodeLabel="4.0" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="22" name="trunc_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="trunc_ln14_fu_190_p1" coreId="4249952814" contextFuncName="vec_norm_inf" bitwidth="23" opcode="trunc" nodeLabel="4.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="icmp_ln14_19" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln14_19_fu_194_p2" opType="icmp" coreId="4222559452" contextFuncName="vec_norm_inf" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="1.55" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="icmp_ln14_20" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln14_20_fu_200_p2" opType="icmp" coreId="4209321362" contextFuncName="vec_norm_inf" bitwidth="1" opcode="icmp" nodeLabel="4.0" m_display="0" m_delay="2.44" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="or_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="or_ln14_fu_206_p2" opType="or" coreId="4215284785" contextFuncName="vec_norm_inf" bitwidth="1" opcode="or" nodeLabel="4.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="tmp_41" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." opType="fcmp" coreId="4174653349" contextFuncName="vec_norm_inf" bitwidth="1" opcode="fcmp" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="5.43" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="27" name="and_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="and_ln14_fu_212_p2" opType="and" coreId="4176816002" contextFuncName="vec_norm_inf" bitwidth="1" opcode="and" nodeLabel="4.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>fcmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="xor_ln14" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="xor_ln14_fu_218_p2" opType="xor" coreId="4180878912" contextFuncName="vec_norm_inf" bitwidth="32" opcode="xor" nodeLabel="4.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="bitcast_ln14_5" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="bitcast_ln14_5_fu_224_p1" coreId="4211221619" contextFuncName="vec_norm_inf" bitwidth="32" opcode="bitcast" nodeLabel="4.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>xor</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="30" name="abs_v_i" lineNumber="14" originalName="abs_v_i" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="abs_v_i_fu_228_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="vec_norm_inf" bitwidth="32" opcode="select" nodeLabel="4.0" m_display="0" m_delay="0.99" m_topoIndex="22" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="bitcast_ln14_10" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="bitcast_ln14_10_fu_236_p1" coreId="4094307195" contextFuncName="vec_norm_inf" bitwidth="32" opcode="bitcast" nodeLabel="6.0" m_display="0" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="tmp_42" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="tmp_42_fu_239_p4" coreId="4184942094" contextFuncName="vec_norm_inf" bitwidth="8" opcode="partselect" nodeLabel="6.0" m_display="0" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="trunc_ln14_8" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="trunc_ln14_8_fu_249_p1" coreId="4200080681" contextFuncName="vec_norm_inf" bitwidth="23" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="bitcast_ln14_11" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="bitcast_ln14_11_fu_253_p1" coreId="4220396799" contextFuncName="vec_norm_inf" bitwidth="32" opcode="bitcast" nodeLabel="6.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="tmp_43" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="tmp_43_fu_257_p4" coreId="4213384272" contextFuncName="vec_norm_inf" bitwidth="8" opcode="partselect" nodeLabel="6.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="trunc_ln14_9" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="trunc_ln14_9_fu_267_p1" coreId="4224459965" contextFuncName="vec_norm_inf" bitwidth="23" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="icmp_ln14_21" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln14_21_fu_271_p2" opType="icmp" coreId="4198180168" contextFuncName="vec_norm_inf" bitwidth="1" opcode="icmp" nodeLabel="6.0" m_display="0" m_delay="1.55" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="icmp_ln14_22" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln14_22_fu_277_p2" opType="icmp" coreId="4178716259" contextFuncName="vec_norm_inf" bitwidth="1" opcode="icmp" nodeLabel="6.0" m_display="0" m_delay="2.44" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="39" name="or_ln14_8" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="or_ln14_8_fu_283_p2" opType="or" coreId="4207158709" contextFuncName="vec_norm_inf" bitwidth="1" opcode="or" nodeLabel="6.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="icmp_ln14_23" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln14_23_fu_289_p2" opType="icmp" coreId="4170590183" contextFuncName="vec_norm_inf" bitwidth="1" opcode="icmp" nodeLabel="6.0" m_display="0" m_delay="1.55" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="icmp_ln14_24" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln14_24_fu_295_p2" opType="icmp" coreId="4196017515" contextFuncName="vec_norm_inf" bitwidth="1" opcode="icmp" nodeLabel="6.0" m_display="0" m_delay="2.44" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="or_ln14_9" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="or_ln14_9_fu_301_p2" opType="or" coreId="4165543686" contextFuncName="vec_norm_inf" bitwidth="1" opcode="or" nodeLabel="6.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="43" name="and_ln14_8" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="and_ln14_8_fu_307_p2" opType="and" coreId="4096469848" contextFuncName="vec_norm_inf" bitwidth="1" opcode="and" nodeLabel="6.0" m_display="0" m_topoIndex="36" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="tmp_44" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." opType="fcmp" coreId="4172752836" contextFuncName="vec_norm_inf" bitwidth="1" opcode="fcmp" nodeLabel="5.0" nodeLatency="1" m_display="0" m_delay="5.43" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="and_ln14_9" lineNumber="14" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="and_ln14_9_fu_313_p2" opType="and" coreId="4182779425" contextFuncName="vec_norm_inf" bitwidth="1" opcode="and" nodeLabel="6.0" m_display="0" m_delay="0.97" m_topoIndex="37" m_clusterGroupNumber="2">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>fcmp</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="max_9" lineNumber="14" originalName="max" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="max_9_fu_319_p3" coreName="Sel" implIndex="auto_sel" control="auto" opType="select" coreId="73" contextFuncName="vec_norm_inf" bitwidth="32" opcode="select" nodeLabel="6.0" m_display="0" m_delay="0.69" m_topoIndex="38" m_clusterGroupNumber="3">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="14" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_norm_inf"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="br_ln0" coreId="4205258196" opcode="br" nodeLabel="6.0" m_display="0" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <controlInputObjs>block_16</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>14</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="58" name="vec_norm_inf.exit" type="BlockType">
+    <controlInputObjs>block_16</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader4.preheader</controlOutputObjs>
+    <controlOutputObjs>.loopexit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="bitcast_ln158" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="bitcast_ln158_fu_326_p1" coreId="4202243350" contextFuncName="is_dual_infeasible" bitwidth="32" opcode="bitcast" nodeLabel="7.0" m_display="0" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="tmp" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="tmp_fu_330_p4" coreId="4190054092" contextFuncName="is_dual_infeasible" bitwidth="8" opcode="partselect" nodeLabel="7.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="trunc_ln158" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="trunc_ln158_fu_340_p1" coreId="4191954605" contextFuncName="is_dual_infeasible" bitwidth="23" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="icmp_ln158" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="icmp_ln158_fu_344_p2" opType="icmp" coreId="4203095543" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="1.55" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="icmp_ln158_1" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="icmp_ln158_1_fu_350_p2" opType="icmp" coreId="4194117258" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="2.44" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="or_ln158" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="or_ln158_fu_356_p2" opType="or" coreId="29" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="or" nodeLabel="7.0" m_display="0" m_topoIndex="45" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="tmp_s" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." opType="fcmp" coreId="4217447454" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="fcmp" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="5.43" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="and_ln158" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="and_ln158_fu_362_p2" opType="and" coreId="4100533222" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="and" nodeLabel="7.0" m_display="0" m_delay="0.97" m_topoIndex="46" m_clusterGroupNumber="4">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>fcmp</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="br_ln158" lineNumber="158" fileName="srcs/src/auxil.c" fileDirectory=".." coreId="4113705539" contextFuncName="is_dual_infeasible" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="158" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>.loopexit</controlInputObjs>
+      <controlInputObjs>.preheader4.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/auxil.c">
+      <validLinenumbers>158</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="60" name=".preheader4.preheader" type="BlockType">
+    <controlInputObjs>vec_norm_inf.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>.preheader4</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="br_ln49" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="4152436990" contextFuncName="vec_prod" opcode="br" nodeLabel="7.0" m_display="0" m_delay="1.58" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <controlInputObjs>.preheader4</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>49</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="68" name=".preheader4" type="BlockType">
+    <controlInputObjs>.preheader4.preheader</controlInputObjs>
+    <controlInputObjs>.split20</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>vec_prod.exit</controlOutputObjs>
+    <controlOutputObjs>.split20</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="i_70" originalName="i" coreId="4140247476" bitwidth="4" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <controlInputObjs>.split20</controlInputObjs>
+      <controlInputObjs>.preheader4.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="prod" originalName="prod" coreId="4126943885" bitwidth="32" opcode="phi" nodeLabel="8.0" m_display="0" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <dataInputObjs>facc</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+      <controlInputObjs>.split20</controlInputObjs>
+      <controlInputObjs>.preheader4.preheader</controlInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="i_71" lineNumber="49" originalName="i" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="i_71_fu_368_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="vec_prod" bitwidth="4" opcode="add" nodeLabel="8.0" m_display="0" m_delay="1.73" m_topoIndex="51" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="zext_ln49" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="zext_ln49_fu_374_p1" coreId="4111805026" contextFuncName="vec_prod" bitwidth="64" opcode="zext" nodeLabel="8.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="icmp_ln49" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln49_fu_380_p2" opType="icmp" coreId="4027395962" contextFuncName="vec_prod" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="1.3" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="br_ln49" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="4133169448" contextFuncName="vec_prod" opcode="br" nodeLabel="8.0" m_display="0" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>.split20</controlInputObjs>
+      <controlInputObjs>vec_prod.exit</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>49</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="78" name=".split20" type="BlockType">
+    <controlInputObjs>.preheader4</controlInputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader4</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="qdata_addr" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="4117768705" contextFuncName="vec_prod" bitwidth="4" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>qdata</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="qdata_load" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="vec_prod" bitwidth="32" opcode="load" nodeLabel="8.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="56" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="work_delta_x_addr_1" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreId="4115868192" contextFuncName="vec_prod" bitwidth="4" opcode="getelementptr" nodeLabel="8.0" m_display="0" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>work_delta_x</dataInputObjs>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="work_delta_x_load_1" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreName="RAM" implIndex="auto" control="auto" opType="ram" coreId="82" contextFuncName="vec_prod" bitwidth="32" opcode="load" nodeLabel="8.0" nodeLatency="1" m_display="0" m_delay="2.32" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="mul_i" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." coreName="FMul_maxdsp" implIndex="maxdsp" control="auto" opType="fmul" coreId="30" contextFuncName="vec_prod" bitwidth="32" opcode="fmul" nodeLabel="10.0" nodeLatency="3" m_display="0" m_delay="5.7" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>facc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="icmp_ln49_1" lineNumber="49" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="icmp_ln49_1_fu_386_p2" opType="icmp" coreId="4125043372" contextFuncName="vec_prod" bitwidth="1" opcode="icmp" nodeLabel="8.0" m_display="0" m_delay="1.3" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>facc</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="prod_1" lineNumber="49" originalName="prod" fileName="srcs/src/lin_alg.c" fileDirectory=".." rtlName="facc_32ns_32ns_1ns_32_6_no_dsp_1_U96" coreName="FAcc_nodsp" implIndex="fabric" control="auto" coreId="11" contextFuncName="vec_prod" bitwidth="32" opcode="facc" nodeLabel="14.0" nodeLatency="5" m_display="0" m_delay="6.53" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/lin_alg.c" linenumber="49" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="vec_prod"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>phi</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="br_ln0" coreId="4029296475" opcode="br" nodeLabel="19.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader4</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/lin_alg.c">
+      <validLinenumbers>49</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="96" name="vec_prod.exit" type="BlockType">
+    <controlInputObjs>.preheader4</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader3.preheader</controlOutputObjs>
+    <controlOutputObjs>.loopexit</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="79" name="mul4" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." coreName="FMul_maxdsp" implIndex="maxdsp" control="auto" opType="fmul" coreId="30" contextFuncName="is_dual_infeasible" bitwidth="32" opcode="fmul" nodeLabel="8.0" nodeLatency="3" m_display="0" m_delay="5.7" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>bitcast</dataOutputObjs>
+      <dataOutputObjs>fcmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="bitcast_ln159" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="bitcast_ln159_fu_399_p1" coreId="4135069961" contextFuncName="is_dual_infeasible" bitwidth="32" opcode="bitcast" nodeLabel="23.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="tmp_45" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="tmp_45_fu_403_p4" coreId="4138084823" contextFuncName="is_dual_infeasible" bitwidth="8" opcode="partselect" nodeLabel="23.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="trunc_ln159" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="trunc_ln159_fu_413_p1" coreId="4144310386" contextFuncName="is_dual_infeasible" bitwidth="23" opcode="trunc" nodeLabel="23.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="bitcast_ln159_1" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="bitcast_ln159_1_fu_417_p1" coreId="4105579463" contextFuncName="is_dual_infeasible" bitwidth="32" opcode="bitcast" nodeLabel="23.0" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="tmp_46" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="tmp_46_fu_421_p4" coreId="4142147989" contextFuncName="is_dual_infeasible" bitwidth="8" opcode="partselect" nodeLabel="23.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="trunc_ln159_1" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="trunc_ln159_1_fu_431_p1" coreId="4157548732" contextFuncName="is_dual_infeasible" bitwidth="23" opcode="trunc" nodeLabel="23.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>bitcast</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="icmp_ln159" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="icmp_ln159_fu_435_p2" opType="icmp" coreId="4146210899" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="icmp" nodeLabel="23.0" m_display="0" m_delay="1.55" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="87" name="icmp_ln159_1" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="icmp_ln159_1_fu_441_p2" opType="icmp" coreId="4107742116" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="icmp" nodeLabel="23.0" m_display="0" m_delay="2.44" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="or_ln159" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="or_ln159_fu_459_p2" opType="or" coreId="4159449245" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="or" nodeLabel="24.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="89" name="icmp_ln159_2" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="icmp_ln159_2_fu_447_p2" opType="icmp" coreId="4148373552" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="icmp" nodeLabel="23.0" m_display="0" m_delay="1.55" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="90" name="icmp_ln159_3" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="icmp_ln159_3_fu_453_p2" opType="icmp" coreId="4150274065" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="icmp" nodeLabel="23.0" m_display="0" m_delay="2.44" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="91" name="or_ln159_1" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="or_ln159_1_fu_463_p2" opType="or" coreId="4031459128" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="or" nodeLabel="24.0" m_display="0" m_topoIndex="76" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="92" name="and_ln159" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="and_ln159_fu_467_p2" opType="and" coreId="4098370361" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="and" nodeLabel="24.0" m_display="0" m_topoIndex="77" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>or</dataInputObjs>
+      <dataInputObjs>or</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="93" name="tmp_47" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." opType="fcmp" coreId="4033359641" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="fcmp" nodeLabel="23.0" nodeLatency="1" m_display="0" m_delay="5.43" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>phi</dataInputObjs>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>and</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="94" name="and_ln159_1" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." rtlName="and_ln159_1_fu_473_p2" opType="and" coreId="4035522502" contextFuncName="is_dual_infeasible" bitwidth="1" opcode="and" nodeLabel="24.0" m_display="0" m_delay="0.97" m_topoIndex="78" m_clusterGroupNumber="5">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>and</dataInputObjs>
+      <dataInputObjs>fcmp</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="95" name="br_ln159" lineNumber="159" fileName="srcs/src/auxil.c" fileDirectory=".." coreId="4040568743" contextFuncName="is_dual_infeasible" opcode="br" nodeLabel="24.0" m_display="0" m_topoIndex="79" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="srcs/src/auxil.c" linenumber="159" fileDirectory="C:\Users\ruben.nieto.PERSONAL\Documents\GitHub\TFG_JorgeNieto_2026" functionName="is_dual_infeasible"/>
+      <dataInputObjs>and</dataInputObjs>
+      <controlInputObjs>.loopexit</controlInputObjs>
+      <controlInputObjs>.preheader3.preheader</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="srcs/src/auxil.c">
+      <validLinenumbers>159</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="98" name=".loopexit" type="BlockType">
+    <controlInputObjs>vec_norm_inf.exit</controlInputObjs>
+    <controlInputObjs>vec_prod.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="97" name="_ln0" coreId="4042731396" opcode="ret" nodeLabel="24.0" m_display="0" m_topoIndex="80" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <blocks id="100" name=".preheader3.preheader" type="BlockType">
+    <controlInputObjs>vec_prod.exit</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader3</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="99" name="br_ln0" coreId="4109642629" opcode="br" nodeLabel="24.0" m_display="0" m_topoIndex="81" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader3</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="104" name=".preheader3" type="BlockType">
+    <controlInputObjs>.preheader3.preheader</controlInputObjs>
+    <controlInputObjs>.preheader3</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>.preheader3</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="103" name="br_ln0" coreId="4087426270" opcode="br" nodeLabel="25.0" m_display="0" m_topoIndex="82" m_clusterGroupNumber="-1">
+      <controlInputObjs>.preheader3</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <regnodes realName="work_delta_x_addr_reg_492">
+    <nodeIds>18</nodeIds>
+  </regnodes>
+  <regnodes realName="i_69_reg_484">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <regnodes realName="i_70_reg_111">
+    <nodeIds>61</nodeIds>
+  </regnodes>
+  <regnodes realName="i_reg_100">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln159_3_reg_561">
+    <nodeIds>90</nodeIds>
+  </regnodes>
+  <regnodes realName="eps_dual_inf_read_reg_479">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="abs_v_i_reg_497">
+    <nodeIds>30</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln159_2_reg_556">
+    <nodeIds>89</nodeIds>
+  </regnodes>
+  <regnodes realName="prod_1_reg_541">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln159_1_reg_551">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="qdata_addr_reg_521">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="qdata_load_reg_536">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_154">
+    <nodeIds>74</nodeIds>
+    <nodeIds>79</nodeIds>
+  </regnodes>
+  <regnodes realName="work_delta_x_addr_1_reg_526">
+    <nodeIds>72</nodeIds>
+  </regnodes>
+  <regnodes realName="prod_reg_122">
+    <nodeIds>62</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln159_reg_546">
+    <nodeIds>86</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln49_1_reg_531">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="max_9_reg_504">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="and_ln158_reg_509">
+    <nodeIds>56</nodeIds>
+  </regnodes>
+  <regnodes realName="reg_148">
+    <nodeIds>19</nodeIds>
+    <nodeIds>73</nodeIds>
+  </regnodes>
+  <regnodes realName="max_reg_88">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="i_71_reg_513">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <expressionNodes realName="tmp_fu_330">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_71_fu_368">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln159_fu_435">
+    <nodeIds>86</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="prod_phi_fu_126">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln158_fu_326">
+    <nodeIds>49</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_24_fu_295">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln159_fu_459">
+    <nodeIds>88</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln14_8_fu_249">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_70_phi_fu_115">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_phi_fu_104">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln159_1_fu_431">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln14_fu_165">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln159_1_fu_473">
+    <nodeIds>94</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln159_1_fu_417">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="xor_ln14_fu_218">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln14_9_fu_313">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln159_fu_467">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln159_1_fu_463">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="abs_v_i_fu_228">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln158_fu_344">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_20_fu_200">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_42_fu_239">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln14_fu_206">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln158_fu_362">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln159_1_fu_441">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="work_delta_x_addr_gep_fu_54">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="max_9_fu_319">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln14_11_fu_253">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln14_fu_176">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln49_fu_380">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln14_10_fu_236">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln14_9_fu_267">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln158_1_fu_350">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln49_fu_374">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln159_fu_413">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_21_fu_271">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln159_2_fu_447">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln14_fu_190">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_22_fu_277">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln14_fu_212">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_43_fu_257">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln159_3_fu_453">
+    <nodeIds>90</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln158_fu_340">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln158_fu_356">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln14_5_fu_224">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_fu_170">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln159_fu_399">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="work_delta_x_addr_1_gep_fu_80">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_46_fu_421">
+    <nodeIds>84</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_23_fu_289">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_45_fu_403">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_69_fu_159">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln14_19_fu_194">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln14_8_fu_283">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln49_1_fu_386">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="max_phi_fu_92">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="qdata_addr_gep_fu_67">
+    <nodeIds>70</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln14_9_fu_301">
+    <nodeIds>42</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="and_ln14_8_fu_307">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_40_fu_180">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_392">
+    <nodeIds>76</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_139">
+    <nodeIds>55</nodeIds>
+    <nodeIds>26</nodeIds>
+    <nodeIds>44</nodeIds>
+    <nodeIds>93</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_134">
+    <nodeIds>79</nodeIds>
+    <nodeIds>74</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="eps_dual_inf_read_read_fu_48">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="qdata">
+    <nodeIds>71</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="work_delta_x">
+    <nodeIds>19</nodeIds>
+    <nodeIds>73</nodeIds>
+  </memoryPorts>
+  <ioPorts name="eps_dual_inf">
+    <contents name="read">
+      <nodeIds>6</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="qdata(p0)">
+    <contents name="load">
+      <nodeIds>71</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="work_delta_x(p0)">
+    <contents name="load">
+      <nodeIds>19</nodeIds>
+      <nodeIds>73</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="2" latency="2"/>
+      <operations id="55" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="19" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="26" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="2"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="44" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="2"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+    </states>
+    <states id="8">
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="2"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="1"/>
+    </states>
+    <states id="9">
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="1"/>
+      <operations id="71" stage="2" latency="2"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="2" latency="2"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="79" stage="4" latency="4"/>
+    </states>
+    <states id="10">
+      <operations id="71" stage="1" latency="2"/>
+      <operations id="73" stage="1" latency="2"/>
+    </states>
+    <states id="11">
+      <operations id="74" stage="4" latency="4"/>
+    </states>
+    <states id="12">
+      <operations id="74" stage="3" latency="4"/>
+    </states>
+    <states id="13">
+      <operations id="74" stage="2" latency="4"/>
+    </states>
+    <states id="14">
+      <operations id="74" stage="1" latency="4"/>
+    </states>
+    <states id="15">
+      <operations id="76" stage="6" latency="6"/>
+    </states>
+    <states id="16">
+      <operations id="76" stage="5" latency="6"/>
+    </states>
+    <states id="17">
+      <operations id="76" stage="4" latency="6"/>
+    </states>
+    <states id="18">
+      <operations id="76" stage="3" latency="6"/>
+    </states>
+    <states id="19">
+      <operations id="76" stage="2" latency="6"/>
+    </states>
+    <states id="20">
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="76" stage="1" latency="6"/>
+      <operations id="77" stage="1" latency="1"/>
+    </states>
+    <states id="21">
+      <operations id="79" stage="3" latency="4"/>
+    </states>
+    <states id="22">
+      <operations id="79" stage="2" latency="4"/>
+    </states>
+    <states id="23">
+      <operations id="79" stage="1" latency="4"/>
+    </states>
+    <states id="24">
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="1"/>
+      <operations id="93" stage="2" latency="2"/>
+    </states>
+    <states id="25">
+      <operations id="88" stage="1" latency="1"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="93" stage="1" latency="2"/>
+      <operations id="94" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="99" stage="1" latency="1"/>
+    </states>
+    <states id="26">
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="1"/>
+      <operations id="103" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="26">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="is_dual_infeasible" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="93" mMaxLatency="278">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <subRegions>5</subRegions>
+      <subRegions>6</subRegions>
+      <subRegions>7</subRegions>
+      <subRegions>8</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>8</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_14_1" mII="-1" mDepth="-1" mMinTripCount="15" mMaxTripCount="15" mMinLatency="90" mMaxLatency="90" mType="1">
+      <basicBlocks>16</basicBlocks>
+      <basicBlocks>48</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Region 1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1" mMaxLatency="1">
+      <basicBlocks>58</basicBlocks>
+      <basicBlocks>60</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="5" mTag="VITIS_LOOP_49_1" mII="-1" mDepth="-1" mMinTripCount="15" mMaxTripCount="15" mMinLatency="180" mMaxLatency="180" mType="1">
+      <basicBlocks>68</basicBlocks>
+      <basicBlocks>78</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="6" mTag="Region 2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="5" mMaxLatency="5">
+      <basicBlocks>96</basicBlocks>
+      <basicBlocks>100</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="7" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>98</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="8" mTag="VITIS_LOOP_85_1" mII="-1" mDepth="-1" mMinTripCount="19" mMaxTripCount="19" mMinLatency="19" mMaxLatency="19" mType="1">
+      <basicBlocks>104</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

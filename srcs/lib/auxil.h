@@ -7,7 +7,7 @@ extern "C" {
 
 # include "types.h"
 
-void c_strcpy(char dest[], const char source[]);
+// void c_strcpy(char dest[], const char source[]);
 
 // --- FIRMAS LIMPIAS ---
 void cold_start(void);

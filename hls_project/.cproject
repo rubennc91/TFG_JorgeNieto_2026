@@ -53,6 +53,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
@@ -62,8 +64,6 @@
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Users/jorge/Documents/Github/TFG_JorgeNieto_2026"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
                                     								
                                 </option>
                                 								
@@ -91,6 +91,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
@@ -100,8 +102,6 @@
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Users/jorge/Documents/Github/TFG_JorgeNieto_2026"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
                                     								
                                 </option>
                                 								
@@ -165,6 +165,8 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1191747577" name="gold_data.h" rcbsApplicability="disable" resourcePath="testbench/gold_data.h" toolsToInvoke=""/>
+                    					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1121562793" name="main.c" rcbsApplicability="disable" resourcePath="testbench/main.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1015073509">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1015073509" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
@@ -175,6 +177,8 @@
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                 								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
@@ -182,14 +186,74 @@
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="C:/Users/jorge/Documents/Github/TFG_JorgeNieto_2026"/>
                                 							
                             </option>
                             							
                             <option id="gnu.c.compiler.option.misc.other.1503089573" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.796572323" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.280328471" name="gold_data.c" rcbsApplicability="disable" resourcePath="testbench/gold_data.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1210982917">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1210982917" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1234342260" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1995660326" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1345106572" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.439512215" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1468094956" name="mpc_util.c" rcbsApplicability="disable" resourcePath="source/mpc_util.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.698109014">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.698109014" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.263543393" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1510908089" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.39135646" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1103910675" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
                             						
                         </tool>
                         					
@@ -203,7 +267,11 @@
                             							
                             <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1748046019" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
                                 								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
                                 								
@@ -212,14 +280,364 @@
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="C:/Users/jorge/Documents/Github/TFG_JorgeNieto_2026"/>
                                 							
                             </option>
                             							
                             <option id="gnu.c.compiler.option.misc.other.370227843" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.206598254" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.873941486" name="error.c" rcbsApplicability="disable" resourcePath="source/error.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1471101588">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1471101588" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.156865757" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1181037712" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.72907550" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2052816270" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1797710411" name="scaling.c" rcbsApplicability="disable" resourcePath="source/scaling.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1119326845">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1119326845" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.38103934" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.2062930619" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1167428003" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1750706678" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.426427481" name="osqp.c" rcbsApplicability="disable" resourcePath="source/osqp.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.215768252">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.215768252" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.153188463" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1973304649" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.585217205" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.639527732" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.791418109" name="proj.c" rcbsApplicability="disable" resourcePath="source/proj.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1110361509">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1110361509" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.963926327" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.2066816005" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1725396890" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1968918315" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1697745374" name="util.c" rcbsApplicability="disable" resourcePath="source/util.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.507768022">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.507768022" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.2080292850" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1935368099" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.112807532" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.810926204" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1587260391" name="lin_alg.c" rcbsApplicability="disable" resourcePath="source/lin_alg.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1551886206">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1551886206" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.2029218355" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1545757317" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.556281502" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.47249852" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1765767460" name="qdldl.c" rcbsApplicability="disable" resourcePath="source/qdldl.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1321558410">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1321558410" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1262879693" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.518139936" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1706471790" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2064039555" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1070023097" name="auxil.c" rcbsApplicability="disable" resourcePath="source/auxil.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.886667758">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.886667758" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.724004544" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1416757374" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.198904971" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1793588209" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1567418788" name="qdldl_interface.c" rcbsApplicability="disable" resourcePath="source/qdldl_interface.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.300197037">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.300197037" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.177563106" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.2043878716" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.230986685" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.9940430" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1762581867" name="simulink_block.c" rcbsApplicability="disable" resourcePath="source/simulink_block.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.285870195">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.285870195" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1251001798" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1905206968" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1692864705" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1382945015" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.452849485.1780975246" name="kkt.c" rcbsApplicability="disable" resourcePath="source/kkt.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1261635659">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410.1261635659" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.debug.885890410">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.768430617" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1797828071" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1102760657" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1223971488" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
                             						
                         </tool>
                         					
@@ -289,6 +707,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
@@ -298,8 +718,6 @@
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Users/jorge/Documents/Github/TFG_JorgeNieto_2026"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
                                     								
                                 </option>
                                 								
@@ -317,6 +735,8 @@
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                     									
+                                    <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                    									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
@@ -326,8 +746,6 @@
                                     <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
                                     									
                                     <listOptionValue builtIn="false" value="C:/Users/jorge/Documents/Github/TFG_JorgeNieto_2026"/>
-                                    									
-                                    <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
                                     								
                                 </option>
                                 								
@@ -381,6 +799,8 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.401197054" name="gold_data.h" rcbsApplicability="disable" resourcePath="testbench/gold_data.h" toolsToInvoke=""/>
+                    					
                     <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.134052287" name="main.c" rcbsApplicability="disable" resourcePath="testbench/main.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1152412404">
                         						
                         <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1152412404" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
@@ -391,6 +811,8 @@
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
                                 								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
@@ -398,14 +820,74 @@
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="C:/Users/jorge/Documents/Github/TFG_JorgeNieto_2026"/>
                                 							
                             </option>
                             							
                             <option id="gnu.c.compiler.option.misc.other.104357084" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.283513795" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.1857783587" name="gold_data.c" rcbsApplicability="disable" resourcePath="testbench/gold_data.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1767033625">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1767033625" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1381964703" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.508519860" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1878712278" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.744868566" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.1936098024" name="mpc_util.c" rcbsApplicability="disable" resourcePath="source/mpc_util.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1201275887">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1201275887" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.854490768" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.639123878" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.989609410" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.441301613" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
                             						
                         </tool>
                         					
@@ -419,7 +901,11 @@
                             							
                             <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1833932415" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
                                 								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
                                 								
@@ -428,14 +914,364 @@
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
                                 								
                                 <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
-                                								
-                                <listOptionValue builtIn="false" value="C:/Users/jorge/Documents/Github/TFG_JorgeNieto_2026"/>
                                 							
                             </option>
                             							
                             <option id="gnu.c.compiler.option.misc.other.1350046537" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
                             							
                             <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1388195994" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.1522938518" name="error.c" rcbsApplicability="disable" resourcePath="source/error.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1034459375">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1034459375" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1109420719" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.258107433" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.137209854" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.669847702" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.867104741" name="scaling.c" rcbsApplicability="disable" resourcePath="source/scaling.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1926485227">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1926485227" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1434755816" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1216636582" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1455478964" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2088277435" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.864958824" name="osqp.c" rcbsApplicability="disable" resourcePath="source/osqp.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1721270139">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1721270139" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1136150644" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.252620599" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1647501537" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2128689786" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.140725489" name="proj.c" rcbsApplicability="disable" resourcePath="source/proj.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1874125412">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1874125412" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.825434616" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.234850130" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.462735672" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.141746865" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.1660296968" name="util.c" rcbsApplicability="disable" resourcePath="source/util.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.2128557260">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.2128557260" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.111948859" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1198606305" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.2016178356" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.495580099" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.1301633529" name="lin_alg.c" rcbsApplicability="disable" resourcePath="source/lin_alg.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.647724241">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.647724241" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1778749083" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.306869959" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.808685293" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.439546253" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.1861394256" name="qdldl.c" rcbsApplicability="disable" resourcePath="source/qdldl.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1912698608">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1912698608" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1951276683" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.195232082" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.1138125024" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1669449051" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.645631356" name="auxil.c" rcbsApplicability="disable" resourcePath="source/auxil.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.760656585">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.760656585" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.212592353" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1477535472" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.206306644" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.120464093" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.1443794071" name="qdldl_interface.c" rcbsApplicability="disable" resourcePath="source/qdldl_interface.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1965042450">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1965042450" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.722069548" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.573031157" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.808815451" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2113125419" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.2047172637" name="simulink_block.c" rcbsApplicability="disable" resourcePath="source/simulink_block.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1206356464">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.1206356464" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1703761650" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.1858519917" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.418722352" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.946551925" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1926626988.1936986490" name="kkt.c" rcbsApplicability="disable" resourcePath="source/kkt.c" toolsToInvoke="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.822141035">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439.822141035" name="GCC C Compiler" superClass="cdt.managedbuild.tool.gnu.c.compiler.exe.release.435250439">
+                            							
+                            <option id="gnu.c.compiler.option.preprocessor.def.symbols.1974920401" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.c.compiler.option.include.paths.851714109" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="srcs/lib"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="C:/Xilinx/Vitis_HLS/2020.2/win64/tools/auto_cc/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.c.compiler.option.misc.other.968913120" name="Other flags" superClass="gnu.c.compiler.option.misc.other"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1517461890" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
                             						
                         </tool>
                         					

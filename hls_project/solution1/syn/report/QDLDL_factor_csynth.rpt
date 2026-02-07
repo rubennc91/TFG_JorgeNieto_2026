@@ -1,0 +1,326 @@
+
+
+================================================================
+== Vitis HLS Report for 'QDLDL_factor'
+================================================================
+* Date:           Sat Feb  7 11:29:05 2026
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        hls_project
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.256 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |                       |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip  |          |
+        |       Loop Name       |   min   |   max   |  Latency |  achieved |   target  |  Count | Pipelined|
+        +-----------------------+---------+---------+----------+-----------+-----------+--------+----------+
+        |- VITIS_LOOP_104_1     |       34|       34|         1|          1|          1|      34|       yes|
+        |- VITIS_LOOP_126_2     |        ?|        ?|         ?|          -|          -|  1 ~ 33|        no|
+        | + VITIS_LOOP_142_3    |        ?|        ?|         ?|          -|          -|       ?|        no|
+        |  ++ VITIS_LOOP_170_4  |        ?|        ?|         2|          2|          1|       ?|       yes|
+        |  ++ VITIS_LOOP_182_5  |        ?|        ?|         2|          1|          1|       ?|       yes|
+        | + VITIS_LOOP_190_6    |        ?|        ?|         ?|          -|          -|       ?|        no|
+        |  ++ VITIS_LOOP_199_7  |        ?|        ?|        12|          6|          1|       ?|       yes|
+        +-----------------------+---------+---------+----------+-----------+-----------+--------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    940|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    5|     348|    711|    -|
+|Memory           |        0|    -|      20|     12|    -|
+|Multiplexer      |        -|    -|       -|    934|    -|
+|Register         |        -|    -|    1413|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    5|    1781|   2597|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    2|       1|      4|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |              Instance             |             Module             | BRAM_18K| DSP|  FF | LUT | URAM|
+    +-----------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |fcmp_32ns_32ns_1_2_no_dsp_1_U4     |fcmp_32ns_32ns_1_2_no_dsp_1     |        0|   0|    0|    0|    0|
+    |fdiv_32ns_32ns_32_16_no_dsp_1_U3   |fdiv_32ns_32ns_32_16_no_dsp_1   |        0|   0|    0|    0|    0|
+    |fmul_32ns_32ns_32_4_max_dsp_1_U2   |fmul_32ns_32ns_32_4_max_dsp_1   |        0|   3|  143|  321|    0|
+    |fsub_32ns_32ns_32_5_full_dsp_1_U1  |fsub_32ns_32ns_32_5_full_dsp_1  |        0|   2|  205|  390|    0|
+    +-----------------------------------+--------------------------------+---------+----+-----+-----+-----+
+    |Total                              |                                |        0|   5|  348|  711|    0|
+    +-----------------------------------+--------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------------------+----------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |         Memory        |              Module              | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------------+----------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |linsys_solver_KKT_i_U  |QDLDL_factor_linsys_solver_KKT_i  |        0|   6|   8|    0|    79|    6|     1|          474|
+    |linsys_solver_KKT_p_U  |QDLDL_factor_linsys_solver_KKT_p  |        0|  14|   4|    0|    35|    7|     1|          245|
+    +-----------------------+----------------------------------+---------+----+----+-----+------+-----+------+-------------+
+    |Total                  |                                  |        0|  20|  12|    0|   114|   13|     2|          719|
+    +-----------------------+----------------------------------+---------+----+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |add_ln115_fu_606_p2       |         +|   0|  0|  14|           7|           7|
+    |add_ln174_fu_727_p2       |         +|   0|  0|  14|           7|           6|
+    |add_ln182_fu_811_p2       |         +|   0|  0|  71|          64|          64|
+    |add_ln183_1_fu_764_p2     |         +|   0|  0|  14|           7|           6|
+    |add_ln197_fu_856_p2       |         +|   0|  0|  14|           7|           7|
+    |i_100_fu_817_p2           |         +|   0|  0|  71|          64|           1|
+    |i_99_fu_829_p2            |         +|   0|  0|  71|          64|           2|
+    |i_fu_578_p2               |         +|   0|  0|  14|           6|           1|
+    |j_16_fu_908_p2            |         +|   0|  0|  71|          64|           1|
+    |k_3_fu_669_p2             |         +|   0|  0|  14|           6|           1|
+    |linsys_solver_iwork_d1    |         +|   0|  0|  14|           6|           1|
+    |nnzE_1_fu_717_p2          |         +|   0|  0|  71|          64|           1|
+    |nnzE_3_fu_758_p2          |         +|   0|  0|  71|          64|           2|
+    |nnzY_2_fu_795_p2          |         +|   0|  0|  71|          64|           1|
+    |and_ln120_fu_652_p2       |       and|   0|  0|   2|           1|           1|
+    |and_ln223_fu_959_p2       |       and|   0|  0|   2|           1|           1|
+    |addr_cmp16_fu_888_p2      |      icmp|   0|  0|  29|          64|          64|
+    |addr_cmp_fu_781_p2        |      icmp|   0|  0|  29|          64|          64|
+    |icmp_ln104_fu_584_p2      |      icmp|   0|  0|  10|           6|           6|
+    |icmp_ln120_1_fu_640_p2    |      icmp|   0|  0|  15|          23|           1|
+    |icmp_ln120_fu_634_p2      |      icmp|   0|  0|  11|           8|           2|
+    |icmp_ln126_fu_658_p2      |      icmp|   0|  0|  10|           6|           6|
+    |icmp_ln142_1_fu_694_p2    |      icmp|   0|  0|  29|          64|          64|
+    |icmp_ln142_fu_688_p2      |      icmp|   0|  0|  10|           7|           7|
+    |icmp_ln150_fu_711_p2      |      icmp|   0|  0|  10|           6|           6|
+    |icmp_ln182_fu_748_p2      |      icmp|   0|  0|  29|          64|           1|
+    |icmp_ln190_1_fu_823_p2    |      icmp|   0|  0|  29|          64|           1|
+    |icmp_ln190_fu_699_p2      |      icmp|   0|  0|  29|          64|           1|
+    |icmp_ln199_fu_875_p2      |      icmp|   0|  0|  29|          64|          64|
+    |icmp_ln223_1_fu_947_p2    |      icmp|   0|  0|  15|          23|           1|
+    |icmp_ln223_fu_941_p2      |      icmp|   0|  0|  11|           8|           2|
+    |or_ln120_fu_646_p2        |        or|   0|  0|   2|           1|           1|
+    |or_ln223_fu_953_p2        |        or|   0|  0|   2|           1|           1|
+    |reuse_select17_fu_902_p3  |    select|   0|  0|  32|           1|          32|
+    |reuse_select_fu_786_p3    |    select|   0|  0|   6|           1|           6|
+    |ap_enable_pp2             |       xor|   0|  0|   2|           1|           2|
+    |ap_enable_pp3             |       xor|   0|  0|   2|           1|           2|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 940|        1037|         437|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------------------+-----+-----------+-----+-----------+
+    |                Name               | LUT | Input Size| Bits| Total Bits|
+    +-----------------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                          |  393|         79|    1|         79|
+    |ap_enable_reg_pp2_iter1            |    9|          2|    1|          2|
+    |ap_enable_reg_pp3_iter1            |    9|          2|    1|          2|
+    |ap_phi_mux_j_15_phi_fu_538_p4      |    9|          2|   64|        128|
+    |ap_sig_allocacmp_reuse_reg12_load  |    9|          2|   32|         64|
+    |empty_134_reg_514                  |    9|          2|   32|         64|
+    |grp_fu_547_p0                      |   14|          3|   32|         96|
+    |grp_fu_552_p0                      |   14|          3|   32|         96|
+    |grp_fu_552_p1                      |   20|          4|   32|        128|
+    |grp_fu_556_p1                      |   14|          3|   32|         96|
+    |grp_fu_561_p0                      |   14|          3|   32|         96|
+    |i_072_reg_418                      |    9|          2|    6|         12|
+    |i_266_in_reg_525                   |    9|          2|   64|        128|
+    |i_98_reg_454                       |    9|          2|   64|        128|
+    |j_15_reg_535                       |    9|          2|   64|        128|
+    |k_reg_429                          |    9|          2|    6|         12|
+    |linsys_solver_D_address0           |   20|          4|    6|         24|
+    |linsys_solver_D_d0                 |   20|          4|   32|        128|
+    |linsys_solver_Dinv_address0        |   20|          4|    6|         24|
+    |linsys_solver_KKT_x_address0       |   14|          3|    7|         21|
+    |linsys_solver_L_i_address0         |   14|          3|    6|         18|
+    |linsys_solver_L_p_address0         |   20|          4|    6|         24|
+    |linsys_solver_L_x_address0         |   14|          3|    6|         18|
+    |linsys_solver_bwork_address0       |   31|          6|    6|         36|
+    |linsys_solver_bwork_d0             |   14|          3|    1|          3|
+    |linsys_solver_fwork_address0       |   37|          7|    6|         42|
+    |linsys_solver_fwork_d0             |   20|          4|   32|        128|
+    |linsys_solver_iwork_address0       |   25|          5|    7|         35|
+    |linsys_solver_iwork_address1       |   25|          5|    7|         35|
+    |linsys_solver_iwork_d0             |   20|          4|    6|         24|
+    |nnzE_2_reg_478                     |    9|          2|   64|        128|
+    |nnzE_reg_466                       |    9|          2|   64|        128|
+    |nnzY_1_reg_488                     |    9|          2|   64|        128|
+    |nnzY_3_reg_499                     |    9|          2|   64|        128|
+    |nnzY_reg_442                       |    9|          2|   64|        128|
+    |reuse_addr_reg13_fu_110            |    9|          2|   64|        128|
+    |reuse_addr_reg_fu_118              |    9|          2|   64|        128|
+    |reuse_reg12_fu_114                 |    9|          2|   32|         64|
+    |reuse_reg_fu_122                   |    9|          2|    6|         12|
+    +-----------------------------------+-----+-----------+-----+-----------+
+    |Total                              |  934|        192| 1115|       2791|
+    +-----------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------+----+----+-----+-----------+
+    |                        Name                       | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------+----+----+-----+-----------+
+    |addr_cmp16_reg_1219                                |   1|   0|    1|          0|
+    |and_ln120_reg_1008                                 |   1|   0|    1|          0|
+    |ap_CS_fsm                                          |  78|   0|   78|          0|
+    |ap_enable_reg_pp2_iter0                            |   1|   0|    1|          0|
+    |ap_enable_reg_pp2_iter1                            |   1|   0|    1|          0|
+    |ap_enable_reg_pp3_iter0                            |   1|   0|    1|          0|
+    |ap_enable_reg_pp3_iter1                            |   1|   0|    1|          0|
+    |bidx_reg_1073                                      |   6|   0|    6|          0|
+    |empty_134_reg_514                                  |  32|   0|   32|          0|
+    |i_072_reg_418                                      |   6|   0|    6|          0|
+    |i_100_reg_1128                                     |  64|   0|   64|          0|
+    |i_266_in_reg_525                                   |  64|   0|   64|          0|
+    |i_98_reg_454                                       |  64|   0|   64|          0|
+    |i_99_reg_1141                                      |  64|   0|   64|          0|
+    |icmp_ln126_reg_1012                                |   1|   0|    1|          0|
+    |icmp_ln142_reg_1052                                |   1|   0|    1|          0|
+    |icmp_ln150_reg_1078                                |   1|   0|    1|          0|
+    |icmp_ln182_reg_1099                                |   1|   0|    1|          0|
+    |icmp_ln190_reg_1069                                |   1|   0|    1|          0|
+    |icmp_ln199_reg_1195                                |   1|   0|    1|          0|
+    |icmp_ln199_reg_1195_pp3_iter1_reg                  |   1|   0|    1|          0|
+    |j_15_reg_535                                       |  64|   0|   64|          0|
+    |j_16_reg_1234                                      |  64|   0|   64|          0|
+    |k_3_reg_1022                                       |   6|   0|    6|          0|
+    |k_reg_429                                          |   6|   0|    6|          0|
+    |linsys_solver_D_addr_1_reg_1047                    |   6|   0|    6|          0|
+    |linsys_solver_D_load_1_reg_1260                    |  32|   0|   32|          0|
+    |linsys_solver_Dinv_load_reg_1250                   |  32|   0|   32|          0|
+    |linsys_solver_KKT_x_load_reg_1001                  |  32|   0|   32|          0|
+    |linsys_solver_L_x_load_reg_1209                    |  32|   0|   32|          0|
+    |linsys_solver_bwork_addr_1_reg_1082                |   6|   0|    6|          0|
+    |linsys_solver_bwork_load_reg_1087                  |   1|   0|    1|          0|
+    |linsys_solver_fwork_addr_2_reg_1162                |   6|   0|    6|          0|
+    |linsys_solver_fwork_addr_3_reg_1214                |   6|   0|    6|          0|
+    |linsys_solver_fwork_addr_3_reg_1214_pp3_iter1_reg  |   6|   0|    6|          0|
+    |linsys_solver_fwork_load_reg_1224                  |  32|   0|   32|          0|
+    |linsys_solver_iwork_addr_2_reg_1157                |   7|   0|    7|          0|
+    |nnzE_2_reg_478                                     |  64|   0|   64|          0|
+    |nnzE_reg_466                                       |  64|   0|   64|          0|
+    |nnzY_1_reg_488                                     |  64|   0|   64|          0|
+    |nnzY_3_reg_499                                     |  64|   0|   64|          0|
+    |nnzY_reg_442                                       |  64|   0|   64|          0|
+    |reg_566                                            |  32|   0|   32|          0|
+    |reg_571                                            |  32|   0|   32|          0|
+    |reuse_addr_reg13_fu_110                            |  64|   0|   64|          0|
+    |reuse_addr_reg_fu_118                              |  64|   0|   64|          0|
+    |reuse_reg12_fu_114                                 |  32|   0|   32|          0|
+    |reuse_reg_fu_122                                   |   6|   0|    6|          0|
+    |reuse_select17_reg_1229                            |  32|   0|   32|          0|
+    |sub_reg_1239                                       |  32|   0|   32|          0|
+    |tmpIdx_1_reg_1172                                  |   6|   0|    6|          0|
+    |yVals_cidx_reg_1184                                |  32|   0|   32|          0|
+    |zext_ln126_reg_1016                                |   6|   0|   64|         58|
+    |zext_ln183_reg_1108                                |   7|   0|   64|         57|
+    |zext_ln87_3_reg_1151                               |   6|   0|   64|         58|
+    |zext_ln87_5_reg_1177                               |   6|   0|   64|         58|
+    |zext_ln87_reg_1037                                 |   7|   0|   64|         57|
+    +---------------------------------------------------+----+----+-----+-----------+
+    |Total                                              |1413|   0| 1701|        288|
+    +---------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+---------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++------------------------------+-----+-----+------------+---------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|         QDLDL_factor|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|         QDLDL_factor|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|         QDLDL_factor|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|         QDLDL_factor|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|         QDLDL_factor|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|         QDLDL_factor|  return value|
+|linsys_solver_L_p_address0    |  out|    6|   ap_memory|    linsys_solver_L_p|         array|
+|linsys_solver_L_p_ce0         |  out|    1|   ap_memory|    linsys_solver_L_p|         array|
+|linsys_solver_L_p_we0         |  out|    1|   ap_memory|    linsys_solver_L_p|         array|
+|linsys_solver_L_p_d0          |  out|    6|   ap_memory|    linsys_solver_L_p|         array|
+|linsys_solver_L_p_q0          |   in|    6|   ap_memory|    linsys_solver_L_p|         array|
+|linsys_solver_bwork_address0  |  out|    6|   ap_memory|  linsys_solver_bwork|         array|
+|linsys_solver_bwork_ce0       |  out|    1|   ap_memory|  linsys_solver_bwork|         array|
+|linsys_solver_bwork_we0       |  out|    1|   ap_memory|  linsys_solver_bwork|         array|
+|linsys_solver_bwork_d0        |  out|    1|   ap_memory|  linsys_solver_bwork|         array|
+|linsys_solver_bwork_q0        |   in|    1|   ap_memory|  linsys_solver_bwork|         array|
+|linsys_solver_fwork_address0  |  out|    6|   ap_memory|  linsys_solver_fwork|         array|
+|linsys_solver_fwork_ce0       |  out|    1|   ap_memory|  linsys_solver_fwork|         array|
+|linsys_solver_fwork_we0       |  out|    1|   ap_memory|  linsys_solver_fwork|         array|
+|linsys_solver_fwork_d0        |  out|   32|   ap_memory|  linsys_solver_fwork|         array|
+|linsys_solver_fwork_q0        |   in|   32|   ap_memory|  linsys_solver_fwork|         array|
+|linsys_solver_D_address0      |  out|    6|   ap_memory|      linsys_solver_D|         array|
+|linsys_solver_D_ce0           |  out|    1|   ap_memory|      linsys_solver_D|         array|
+|linsys_solver_D_we0           |  out|    1|   ap_memory|      linsys_solver_D|         array|
+|linsys_solver_D_d0            |  out|   32|   ap_memory|      linsys_solver_D|         array|
+|linsys_solver_D_q0            |   in|   32|   ap_memory|      linsys_solver_D|         array|
+|linsys_solver_iwork_address0  |  out|    7|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_iwork_ce0       |  out|    1|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_iwork_we0       |  out|    1|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_iwork_d0        |  out|    6|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_iwork_address1  |  out|    7|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_iwork_ce1       |  out|    1|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_iwork_we1       |  out|    1|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_iwork_d1        |  out|    6|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_iwork_q1        |   in|    6|   ap_memory|  linsys_solver_iwork|         array|
+|linsys_solver_KKT_x_address0  |  out|    7|   ap_memory|  linsys_solver_KKT_x|         array|
+|linsys_solver_KKT_x_ce0       |  out|    1|   ap_memory|  linsys_solver_KKT_x|         array|
+|linsys_solver_KKT_x_q0        |   in|   32|   ap_memory|  linsys_solver_KKT_x|         array|
+|linsys_solver_L_x_address0    |  out|    6|   ap_memory|    linsys_solver_L_x|         array|
+|linsys_solver_L_x_ce0         |  out|    1|   ap_memory|    linsys_solver_L_x|         array|
+|linsys_solver_L_x_we0         |  out|    1|   ap_memory|    linsys_solver_L_x|         array|
+|linsys_solver_L_x_d0          |  out|   32|   ap_memory|    linsys_solver_L_x|         array|
+|linsys_solver_L_x_q0          |   in|   32|   ap_memory|    linsys_solver_L_x|         array|
+|linsys_solver_L_i_address0    |  out|    6|   ap_memory|    linsys_solver_L_i|         array|
+|linsys_solver_L_i_ce0         |  out|    1|   ap_memory|    linsys_solver_L_i|         array|
+|linsys_solver_L_i_we0         |  out|    1|   ap_memory|    linsys_solver_L_i|         array|
+|linsys_solver_L_i_d0          |  out|    6|   ap_memory|    linsys_solver_L_i|         array|
+|linsys_solver_L_i_q0          |   in|    6|   ap_memory|    linsys_solver_L_i|         array|
+|linsys_solver_Dinv_address0   |  out|    6|   ap_memory|   linsys_solver_Dinv|         array|
+|linsys_solver_Dinv_ce0        |  out|    1|   ap_memory|   linsys_solver_Dinv|         array|
+|linsys_solver_Dinv_we0        |  out|    1|   ap_memory|   linsys_solver_Dinv|         array|
+|linsys_solver_Dinv_d0         |  out|   32|   ap_memory|   linsys_solver_Dinv|         array|
+|linsys_solver_Dinv_q0         |   in|   32|   ap_memory|   linsys_solver_Dinv|         array|
++------------------------------+-----+-----+------------+---------------------+--------------+
+

@@ -1,104 +1,130 @@
 INFO: Applying HLS Y2K22 patch v1.2 for IP revision
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
-INFO: [HLS 200-10] For user 'ruben.nieto' on host 'mp-5cg0326r5c' (Windows NT_amd64 version 6.2) on Fri Feb 06 12:40:04 +0100 2026
+INFO: [HLS 200-10] For user 'ruben.nieto' on host 'mp-5cg0326r5c' (Windows NT_amd64 version 6.2) on Sat Feb 07 11:59:49 +0100 2026
 INFO: [HLS 200-10] In directory 'C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026'
-Sourcing Tcl script 'C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026/hls_project/solution1/csynth.tcl'
+Sourcing Tcl script 'C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026/hls_project/solution1/csim.tcl'
 INFO: [HLS 200-1510] Running: open_project hls_project 
 INFO: [HLS 200-10] Opening project 'C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026/hls_project'.
 INFO: [HLS 200-1510] Running: set_top myFunction 
-INFO: [HLS 200-1510] Running: add_files srcs/lib/abc_dq0_pos.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/abc_dq0_pos.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/auxil.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/auxil.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/auxil.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/auxil.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/constants.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/constants.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/dq0_abc.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/dq0_abc.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/error.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/error.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/error.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/error.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/glob_opts.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/glob_opts.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/kkt.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/kkt.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/kkt.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/kkt.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/lin_alg.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/lin_alg.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/lin_alg.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/lin_alg.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/mpc_util.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/mpc_util.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/mpc_util.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/mpc_util.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/osqp.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/osqp.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/osqp.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/osqp.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/osqp_configure.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/osqp_configure.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/proj.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/proj.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/proj.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/proj.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/qdldl.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/qdldl.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/qdldl.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/qdldl.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/qdldl_interface.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/qdldl_interface.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/qdldl_interface.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/qdldl_interface.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/qdldl_types.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/qdldl_types.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/scaling.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/scaling.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/scaling.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/scaling.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/simulink_block.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/simulink_block.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/simulink_block.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/simulink_block.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/spll_3ph_srf.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/spll_3ph_srf.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/types.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/types.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/util.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/util.c' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/lib/util.h 
-INFO: [HLS 200-10] Adding design file 'srcs/lib/util.h' to the project
-INFO: [HLS 200-1510] Running: add_files srcs/src/workspace.c 
-INFO: [HLS 200-10] Adding design file 'srcs/src/workspace.c' to the project
 INFO: [HLS 200-1510] Running: add_files srcs/lib/workspace.h 
 INFO: [HLS 200-10] Adding design file 'srcs/lib/workspace.h' to the project
-INFO: [HLS 200-1510] Running: add_files -tb srcs/testbench/main.c 
+INFO: [HLS 200-1510] Running: add_files srcs/src/workspace.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/workspace.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/util.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/util.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/util.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/util.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/types.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/types.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/spll_3ph_srf.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/spll_3ph_srf.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/simulink_block.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/simulink_block.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/simulink_block.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/simulink_block.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/scaling.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/scaling.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/scaling.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/scaling.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/qdldl_types.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/qdldl_types.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/qdldl_interface.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/qdldl_interface.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/qdldl_interface.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/qdldl_interface.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/qdldl.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/qdldl.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/qdldl.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/qdldl.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/proj.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/proj.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/proj.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/proj.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/osqp_configure.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/osqp_configure.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/osqp.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/osqp.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/osqp.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/osqp.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/mpc_util.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/mpc_util.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/mpc_util.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/mpc_util.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/lin_alg.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/lin_alg.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/lin_alg.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/lin_alg.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/kkt.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/kkt.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/kkt.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/kkt.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/glob_opts.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/glob_opts.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/error.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/error.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/error.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/error.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/dq0_abc.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/dq0_abc.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/constants.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/constants.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/auxil.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/auxil.h' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/src/auxil.c -cflags -Isrcs/lib 
+INFO: [HLS 200-10] Adding design file 'srcs/src/auxil.c' to the project
+INFO: [HLS 200-1510] Running: add_files srcs/lib/abc_dq0_pos.h 
+INFO: [HLS 200-10] Adding design file 'srcs/lib/abc_dq0_pos.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb srcs/testbench/main.c -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
 INFO: [HLS 200-10] Adding test bench file 'srcs/testbench/main.c' to the project
+INFO: [HLS 200-1510] Running: add_files -tb srcs/testbench/gold_data.h -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'srcs/testbench/gold_data.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb srcs/testbench/gold_data.c -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'srcs/testbench/gold_data.c' to the project
 INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
 INFO: [HLS 200-10] Opening solution 'C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026/hls_project/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
 INFO: [HLS 200-1505] Using flow_target 'vivado'
 Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
-INFO: [HLS 200-1510] Running: set_part xc7z020clg484-1 
+INFO: [HLS 200-1510] Running: set_part xc7z020-clg484-1 
 INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-1510] Running: csynth_design 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.153 seconds; current allocated memory: 168.698 MB.
-INFO: [HLS 200-10] Analyzing design file 'srcs/src/workspace.c' ... 
-ERROR: [HLS 207-812] 'types.h' file not found: srcs/src/workspace.c:6:10
-INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.496 seconds; current allocated memory: 169.166 MB.
-command 'ap_source' returned error code
-    while executing
-"source C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026/hls_project/solution1/csynth.tcl"
-    invoked from within
-"hls::main C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026/hls_project/solution1/csynth.tcl"
-    ("uplevel" body line 1)
-    invoked from within
-"uplevel 1 hls::main {*}$newargs"
-    (procedure "hls_proc" line 16)
-    invoked from within
-"hls_proc [info nameofexecutable] $argv"
-INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 4.525 seconds; peak allocated memory: 168.825 MB.
+INFO: [HLS 200-1510] Running: set_directive_top -name myFunction myFunction 
+INFO: [HLS 200-1510] Running: csim_design -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../srcs/src/simulink_block.c in debug mode
+INFO: Applying HLS Y2K22 patch v1.2 for IP revision
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'ruben.nieto' on host 'mp-5cg0326r5c' (Windows NT_amd64 version 6.2) on Sat Feb 07 12:00:00 +0100 2026
+INFO: [HLS 200-10] In directory 'C:/Users/ruben.nieto.PERSONAL/Documents/GitHub/TFG_JorgeNieto_2026/hls_project/solution1/csim/build'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+=============================================
+   INICIO TESTBENCH HLS - OSQP SOLVER MPC    
+=============================================
+
+--- Iteracion 1 ---
+Inputs: Vdc=750.00, iL=15.00
+Resultados (Control Action):
+  v_ref_d: 0.000000
+  v_ref_q: 0.000000
+
+--- Iteracion 2 ---
+Inputs: Vdc=751.00, iL=15.00
+Resultados (Control Action):
+  v_ref_d: 0.000000
+  v_ref_q: 0.000000
+
+--- Iteracion 3 ---
+Inputs: Vdc=752.00, iL=15.00
+Resultados (Control Action):
+  v_ref_d: 0.000000
+  v_ref_q: 0.000000
+
+=============================================
+   TESTBENCH FINALIZADO EXITOSAMENTE (RET 0) 
+=============================================
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 18.284 seconds; current allocated memory: 169.042 MB.
