@@ -59,7 +59,7 @@ void myFunction(
 
 - [x] Port OSQP C code to static C compatible with Vitis HLS.
 - [x] Verify C-Synthesis and remove all pointer-to-pointer errors.
-- [ ] **Cosimulation:** Verify numerical accuracy against the original C code using a Testbench.
+- [x] **Cosimulation:** Verify numerical accuracy against the original C code using a Testbench.
 - [ ] **IP Export:** Export the RTL design as an IP Core for Vivado.
 - [ ] **System Integration:** Integrate the IP Core into a Zynq Block Design (Connect via AXI4-Lite or AXI-Stream).
 - [ ] **Hardware Validation:** Run the solver on the physical FPGA (Zybo Z7-10) and benchmark execution time.
